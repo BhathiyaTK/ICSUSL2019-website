@@ -62,10 +62,10 @@ header{
 }
 .bg-color{
 	height: 100vh;
-	background: rgba(237, 206, 24,0.5);
+	background: rgba(255, 255, 255,0.5);
 }
 .navbar{
-	background-image: linear-gradient(to bottom, rgba(237, 206, 24,1), rgba(237, 206, 24,0));
+	background-image: linear-gradient(to bottom, rgba(255, 255, 255,1), rgba(255, 255, 255,0));
 }
 .navbar-brand{
 	width: auto;
@@ -281,7 +281,7 @@ header{
 	padding: 20px 0;
 	box-shadow: 1px 1px 8px 8px #eee;
 	border:0;
-	transition: 0.5s;
+	transition: 0.3s;
 }
 .call-for-paper-subdivs:hover{
 	background: rgba(107, 0, 255,0.8);
