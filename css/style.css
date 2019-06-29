@@ -325,6 +325,7 @@ header{
 .section-btn-area a:hover, .section-btn-area a:hover:after{
 	background-position: 0%;
 	text-decoration: none;
+}
   
 .section {
     margin: 10px;
