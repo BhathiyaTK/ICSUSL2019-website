@@ -325,6 +325,15 @@ header{
 .section-btn-area a:hover, .section-btn-area a:hover:after{
 	background-position: 0%;
 	text-decoration: none;
+  
+.section {
+    margin: 10px;
+    padding: 10px;
+}
+
+.topic {
+    margin: 10px;
+    padding: 10px;
 }
 
 /*======================== Programme committee ========================== */
