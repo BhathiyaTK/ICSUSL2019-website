@@ -1,3 +1,331 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+/* =================== Fonts ===================== */
+@font-face{
+	font-family: font_1;
+	src: url(../fonts/abel-regular.ttf);
+}
+@font-face{
+	font-family: font_2;
+	src: url(../fonts/GothamBold.ttf);
+}
+@font-face{
+	font-family: font_3;
+	src: url(../fonts/GothamBook.ttf);
+}
+@font-face{
+	font-family: font_4;
+	src: url(../fonts/GothamMedium.ttf);
+}
+@font-face{
+	font-family: font_5;
+	src: url(../fonts/PestaStencilBoldDemo.otf);
+}
+@font-face{
+	font-family: font_6;
+	src: url(../fonts/johnnyFever.ttf);
+}
+@font-face{
+	font-family: font_7;
+	src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face{
+	font-family: font_8;
+	src: url(../fonts/Roboto-Medium.ttf);
+}
+@font-face{
+	font-family: font_9;
+	src: url(../fonts/Roboto-Bold.ttf);
+}
+@font-face{
+	font-family: font_10;
+	src: url(../fonts/Antonio-Regular.ttf);
+}
+@font-face{
+	font-family: font_11;
+	src: url(../fonts/Antonio-Bold.ttf);
+}
+/* ================== Common styles ===================== */
+.bg-color-dark{
+	background: rgba(107, 0, 255,0.8);
+}
+/*    #edce18 --> Yellow color    */
+
+/* ================== Navbar styles ===================== */
+header{
+	width: 100%;
+	height: 100vh;
+	background: url(../images/1.jpg);
+	background-size: cover;
+}
+.bg-color{
+	height: 100vh;
+	background: rgba(237, 206, 24,0.5);
+}
+.navbar{
+	background-image: linear-gradient(to bottom, rgba(237, 206, 24,1), rgba(237, 206, 24,0));
+}
+.navbar-brand{
+	width: auto;
+}
+.navbar-brand img{
+	width: 17%;
+}
+.navbar-collapse ul li{
+	padding: 8px;
+	font-family: font_10;
+	font-size: 18px;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+}
+.navbar-collapse ul li a{
+	color: #000;
+}
+.header-content{
+	width: 100%;
+	height: 45vh;
+	transform: translate(0,50%);
+}
+.header-title{
+	text-align: center;
+	font-family: font_6;
+	font-size: 5em;
+	color: #6b00ff;
+	text-shadow: 1px 1px 3px #ccc;
+	text-transform: uppercase;
+}
+.address-div{
+	text-align: center;
+}
+.address-div .place{
+	font-family: font_4;
+	font-size:2em;
+	color: #c21e56;
+	text-shadow: 1px 1px 3px #ccc;
+}
+.address-div .date{
+	font-family: font_1;
+	font-size:1.8em;
+	color: #111;
+	text-shadow: 1px 1px 3px #ccc;
+}
+
+/* ================ Countdown section ================== */
+#countdown-sec{
+	display: flex;
+	background: #0b213b;
+	/*background: rgb(237, 206, 24);*/
+	padding: 40px 70px;
+}
+.countdown-title{
+	width: 50%;
+	color: #eee;
+	font-size: 2em;
+	font-family: font_9;
+	font-weight: bolder; 
+}
+.countdown-title span{
+	font-family: font_7;
+	font-weight: normal;
+	font-size: 25px;
+	color: #4999f5;
+}
+.countdown-div{
+	width: 50%;
+	margin: 0 auto;
+	display: flex;
+}
+.countdown-div .countdown{
+	width: 25%;
+	margin: 0 auto;
+	text-align: center;
+}
+.countdown-div .countdown .number{
+	text-align: center;
+	font-family: font_9;
+	font-weight: bolder;
+	font-size: 3.3em;
+	line-height: 60px;
+}
+.countdown-div .countdown .time{
+	font-family: font_7;
+	font-size: 1.3em;
+	color: #f4b233;
+	/*text-shadow: 1px 1px 3px #ccc;*/
+}
+#days{
+	color: #2d549e;
+}
+#hours{
+	color: #c21e56;
+}
+#minutes{
+	color: #a53692;
+}
+#seconds{
+	color: #1c804b;
+}
+
+/* ================ Registration section ================ */
+#reg-section{
+	background-image: url(../images/2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+#reg-section-content{
+	padding: 80px 0 100px 0;
+}
+.reg-sec-title{
+	margin-bottom: 70px;
+}
+.reg-sec-title h1{
+	font-family: font_6;
+	color: #fff;
+}
+.card{
+	border-radius: 20px;
+	border: 4px solid #fff;
+}
+.card-body{
+	padding: 0 40px 50px;
+	z-index: 1;
+}
+.card img{
+	width: 50%;
+	margin: 40px auto 0;
+	z-index: 1;
+}
+.card .card-title{
+	font-family: font_2;
+	font-size: 2em;
+}
+.card .card-text{
+	font-family: font_7;
+}
+.side-cards{
+	margin: 100px 0;
+	color: #fff;
+	background: transparent;
+	transition: 0.7s;
+	overflow: hidden;
+}
+.center-card{
+	color: #edce18;
+	background: rgba(194, 30, 86, 0.7); /*rgb(237, 206, 24)*/
+	transition: 0.7s;
+	overflow: hidden;
+}
+.back-div-left{
+	position: absolute;
+	background: #edce18;
+	width: 0%;
+	height: 480px;
+	z-index: 0;
+	opacity: 0.5;
+	transition: width 0.7s;
+}
+.side-cards:hover .back-div-left{
+	width: 100%;
+}
+.back-div-right{
+	position: absolute;
+	background: #edce18;
+	width: 100%;
+	height: 480px;
+	left: 100%;
+	z-index: 0;
+	opacity: 0.5;
+	transition: left 0.7s;
+}
+.side-cards:hover .back-div-right{
+	left: 0%;
+}
+.back-div-center{
+	position: absolute;
+	background: #edce18;
+	width: 100%;
+	height: 0px;
+	z-index: 0;
+	opacity: 0.5;
+	transition: height 0.7s;
+}
+.center-card:hover .back-div-center{
+	height: 687px;
+}
+.center-card:hover, .side-cards:hover{
+	color: yellow;
+}
+
+/* ==================== Call for papers ================== */
+#call-for-paper-sec{
+	padding: 80px 0 100px 0;
+	background: #f3f3f3;
+}
+.call-for-paper-title{
+	margin-bottom: 70px;
+}
+.call-for-paper-title h1{
+	font-family: font_6;
+	color: #000;
+}
+.call-for-paper-title p{
+	font-family: font_1;
+	font-size: 20px;
+	color: #666;
+}
+.call-for-paper-subdivs{
+	padding: 20px 0;
+	box-shadow: 1px 1px 8px 8px #eee;
+	border:0;
+	transition: 0.5s;
+}
+.call-for-paper-subdivs:hover{
+	background: rgba(107, 0, 255,0.8);
+	color: #fff;
+}
+.call-for-paper-subdivs:hover p{
+	color: #ddd;
+}
+.call-for-paper-subdivs h4{
+	font-family: font_11;
+}
+.call-for-paper-subdivs p{
+	color: #777;
+	transition: 0.5s;
+}
+.section-btn-area a{
+	font-family: font_10;
+	text-transform: uppercase;
+	color: #fff;
+	padding: 15px 40px;
+	margin: 0 5px;
+	background: linear-gradient(45deg, #6b00ff 50%, #c21e56 50%);
+	box-shadow: 1px 1px 5px 5px #ddd;
+	position: relative;
+}
+.section-btn-area a:after{
+	position: absolute;
+	content: "";
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: linear-gradient(45deg, #6b00ff 50%, #c21e56 50%);
+	z-index: -1;
+}
+.section-btn-area a, .section-btn-area a:after{
+	background-size: 300%;
+	background-position: 71%;
+	transition: 0.8s;
+}
+.section-btn-area a:hover, .section-btn-area a:hover:after{
+	background-position: 0%;
+	text-decoration: none;
+  
 .section {
     margin: 10px;
     padding: 10px;
@@ -8,8 +336,161 @@
     padding: 10px;
 }
 
+/*======================== Programme committee ========================== */
+#program-com-sec{
+	background-image: url(../images/4.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.program-com-content{
+	padding: 80px 0;
+	color: #fff;
+}
+.program-com-title{
+	margin-bottom: 70px;
+}
+.program-com-title h1{
+	font-family: font_6;
+	color: #fff;
+}
+.committee-people-div{
+	margin-bottom: 30px;
+}
+.committee-people-div h3{
+	font-family: font_9;
+}
+.committee-people-div ul{
+	margin: 15px 0 0 40px;
+	list-style-image: url(../images/bullet.png);
+}
+.committee-people-div ul li b{
+	font-family: sans-serif;
+}
+.committee-people-div ul li{
+	font-family: font_7;
+	margin: 3px 0;
+}
 
+/* ========================= Gallery ======================= */
+#gallery-sec{
+	padding: 80px 0 100px 0;
+	background: #f3f3f3;
+}
+.gallery-title{
+	margin-bottom: 70px;
+}
+.gallery-title h1{
+	font-family: font_6;
+	color: #000;
+}
+.main-box{
+	width: 33.33%;
+	height: auto;
+	display: inline-flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.img-box{
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+.img-box img{
+	position: relative;
+	width: 100%;
+	transition: 0.4s;
+}
+.img-icon{
+	position: absolute;
+	background: rgba(107, 0, 255, 0.8);
+	width: 27.5%;
+	height: 41.8%;
+	padding: 130px 0;
+	opacity: 0;
+	/*transform: scale(0);*/
+	transition: 0.4s;
+}
+.img-icon a{
+	padding: 17px;
+	color: #6b00ff;
+	background: #edce18;
+	border: 4px solid #c21e56;
+	border-radius: 50%;
+	transition: 0.4s;
+	transform: scale(0);
+}
+.main-box:hover .img-icon{
+	opacity: 1;
+}
+.main-box:hover .img-icon a{
+	transform: scale(1);
+}
+.main-box:hover .img-box img{
+	transform: scale(1.15);
+}
 
+/* ===================== Footer ====================== */
+#footer-sec{
+	background: rgb(107, 0, 255);
+	background-image: url(../images/pattern.png);
+	background-size: cover;
+}
+.footer-content{
+	padding: 80px 100px 0px;
+}
+.footer-logo-img img{
+	width: 70%;
+}
+.footer-sub-content h4{
+	font-family: font_11;
+}
+.footer-divider{
+	border-top: 4px solid #4999f5;
+	width: 13%;
+	margin-bottom: 30px;
+}
+.footer-event-date{
+	color: rgb(237, 206, 24);
+	font-family: font_8;
+}
+.footer-event-address, .footer-event-address a{
+	font-family: font_7;
+	color: #ddd;
+	transition: 0.2s;
+}
+.footer-event-address a:hover{
+	text-decoration: none;
+	color: rgb(237, 206, 24);
+}
+.footer-social-links{
+	display: inline-flex;
+}
+.footer-social-links a{
+	margin: 0 5px;
+}
+.footer-social-links .social-link{
+	width: 45px;
+	height: 45px;
+	color: #777;
+	text-align: center;
+	background: #ccc;
+	/*background: rgb(237, 206, 24);*/
+	line-height: 45px;
+	border-radius: 50%;
+	transition: 0.3s;
+}
+.footer-social-links .social-link:hover{
+	color: #6b00ff;
+	background: rgb(237, 206, 24);
+}
+.footer-lower-text{
+	padding-bottom: 25px;
+	font-family: font_1;
+	font-size: 15px;
+	text-transform: uppercase;
+}
 
 
 
