@@ -42,33 +42,22 @@
 
         // register form ajax request
         $(function(){
-            $("#contact-form").on('submit',function(e2){
+            $("#register-form").submit(function(e2){
                 e2.preventDefault();
 
-                var full_name = $("#full_name").val();
-                var paper_id = $("#paper_id").val();
-                var name_on_badge = $("#name_on_badge").val();
-                var affiliation = $("#affiliation").val();
-                var country = $("#country").val();
-                var email = $("#email").val();
-                var phone = $("#phone").val();
-                var receipt_name = $("#receipt_name").val();
-                var receipt_address = $("#receipt_address").val();
-                var partipant_type = $("#partipant_type").val();
-                var payment_receipt = $("#payment_receipt").val();
-                var studentship = $("#studentship").val();
-                var lunch = $("#lunch").val();
-                var dinner = $("#dinner").val();
-                var tour = $("#tour").val();
+                var formData = new FormData(this);
 
                 $.ajax({
                     type: "POST",
                     url: "ajax/register_req.php",
-                    data: {full_name:full_name,paper_id:paper_id,name_on_badge:name_on_badge,affiliation:affiliation,country:country,email:email,phone:phone,receipt_name:receipt_name,receipt_address:receipt_address,partipant_type:partipant_type,payment_receipt:payment_receipt,studentship:studentship,lunch:lunch,dinner:dinner,tour:tour},
+                    data: formData,
                     success: function(data2){
+                        $("#register-form")[0].reset();
                         $(".register-msg").html(data2);
-                        $("#contact-form")[0].reset();
-                    }
+                    },
+			        cache: false,
+			        contentType: false,
+			        processData: false
                 });
             });
         });
@@ -103,11 +92,13 @@
     <div id="reg-form-sec">
     	<div class="reg-form-container">
     		<div class="reg-form-content">
-	    		<form>
+	    		<form id="register-form">
+	    			<div class="require-mark-topic-div"><div class="require-mark-title"></div> Required Fields</div>
+	    			<br>
 	    			<label>Bio details</label>
 	    			<div class="row">
 	    				<div class="col-md-12">
-	    					<input type="text" name="full_name" id="full_name" placeholder="Full Name">
+	    					<input type="text" name="full_name" id="full_name" placeholder="Full Name"><div class="require-mark"></div>
 	    				</div>
 	    			</div>
 	    			<div class="row">
@@ -115,20 +106,20 @@
 	    					<input type="text" name="paper_id" id="paper_id" placeholder="Paper ID/ Title">
 	    				</div>
 	    				<div class="col-md-6">
-	    					<input type="text" name="name_on_badge" id="name_on_badge" placeholder="Name on the Badge">
+	    					<input type="text" name="name_on_badge" id="name_on_badge" placeholder="Name on the Badge"><div class="require-mark"></div>
 	    				</div>
 	    			</div>
 	    			<div class="row">
 	    				<div class="col-md-6">
-	    					<input type="text" name="affiliation" id="affiliation" placeholder="Affiliation">
+	    					<input type="text" name="affiliation" id="affiliation" placeholder="Affiliation"><div class="require-mark"></div>
 	    				</div>
 	    				<div class="col-md-6">
-	    					<input type="text" name="country" id="country" placeholder="Country">
+	    					<input type="text" name="country" id="country" placeholder="Country"><div class="require-mark"></div>
 	    				</div>
 	    			</div>
 	    			<div class="row">
 	    				<div class="col-md-7">
-	    					<input type="email" name="email" id="email" placeholder="Email">
+	    					<input type="email" name="email" id="email" placeholder="Email"><div class="require-mark"></div>
 	    				</div>
 	    				<div class="col-md-5">
 	    					<input type="text" name="phone" id="phone" placeholder="Phone">
@@ -151,50 +142,55 @@
 	    						<option value="pa">Participant / Author</option>
 	    						<option value="std">Student</option>
 	    						<option value="ca">Co-Author</option>
-	    					</select>
+	    					</select><div class="require-mark-1"></div>
 	    				</div>
 	    			</div>
 	    			<div class="row">
 	    				<div class="col-md-6">
 	    					<label class="sub-label">Bank Payment Receipt</label>
-	    					<input type="file" name="payment_receipt" id="payment_receipt">
+	    					<input type="file" name="payment_receipt" id="payment_receipt"><div class="require-mark-2"></div>
 	    				</div>
 	    				<div class="col-md-6">
 	    					<label class="sub-label">Proof of Studentship</label>
-	    					<input type="file" name="studentship" id="studentship">
+	    					<input type="file" name="studentship" id="studentship"><div class="require-mark-2"></div>
 	    				</div>
 	    			</div>
 	    			<br>
-	    			<label>Meal Preference</label>
 	    			<div class="row">
-	    				<div class="col-md-6">
-	    					<select id="lunch" name="lunch">
-	    						<option value="">Select Your Lunch Type</option>
-	    						<option value="chicken">Chicken</option>
-	    						<option value="fish">Fish</option>
-	    						<option value="egg">Egg</option>
-	    						<option value="veg">Vegetable</option>
-	    					</select>
+	    				<div class="col-md-7">
+	    					<label>Meal Preference</label>
+	    					<div class="row">
+	    						<div class="col-md-6">
+			    					<select id="lunch" name="lunch">
+			    						<option value="">Lunch Type</option>
+			    						<option value="chicken">Chicken</option>
+			    						<option value="fish">Fish</option>
+			    						<option value="egg">Egg</option>
+			    						<option value="veg">Vegetable</option>
+			    					</select>
+			    				</div>
+			    				<div class="col-md-6">
+			    					<select id="dinner" name="dinner">
+			    						<option value="">Dinner Type</option>
+			    						<option value="chicken">Chicken</option>
+			    						<option value="fish">Fish</option>
+			    						<option value="egg">Egg</option>
+			    						<option value="veg">Vegetable</option>
+			    					</select>
+			    				</div>
+	    					</div>
 	    				</div>
-	    				<div class="col-md-6">
-	    					<select id="dinner" name="dinner">
-	    						<option value="">Select Your Dinner Type</option>
-	    						<option value="chicken">Chicken</option>
-	    						<option value="fish">Fish</option>
-	    						<option value="egg">Egg</option>
-	    						<option value="veg">Vegetable</option>
-	    					</select>
-	    				</div>
-	    			</div>
-	    			<br>
-	    			<label>Tour Participation</label>
-	    			<div class="row">
-	    				<div class="col-md-6">
-	    					<select id="tour" name="tour">
-	    						<option value="">Confirm Your Participation</option>
-	    						<option value="yes">Yes</option>
-	    						<option value="no">No</option>
-	    					</select>
+	    				<div class="col-md-5">
+	    					<label>Tour Participation</label>
+	    					<div class="row">
+	    						<div class="col-md-12">
+			    					<select id="tour" name="tour">
+			    						<option value="">Confirm Your Participation</option>
+			    						<option value="yes">Yes</option>
+			    						<option value="no">No</option>
+			    					</select>
+			    				</div>
+	    					</div>
 	    				</div>
 	    			</div>
 	    			<br>
