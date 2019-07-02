@@ -2,6 +2,16 @@
 	padding: 0;
 	margin: 0;
 }
+/* ======== Preloader ========== */
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(../images/Preloader.gif) center no-repeat #fff;
+}
 /* =================== Fonts ===================== */
 @font-face{
 	font-family: font_1;
@@ -62,16 +72,21 @@ header{
 }
 .bg-color{
 	height: 100vh;
-	background: rgba(237, 206, 24,0.5);
+	background: rgba(255, 255, 255,0.5);
 }
 .navbar{
-	background-image: linear-gradient(to bottom, rgba(237, 206, 24,1), rgba(237, 206, 24,0));
+	background-image: linear-gradient(to bottom, rgba(255, 255, 255,1), rgba(255, 255, 255,0));
+	position: fixed;
+	z-index: 9999;
+	width: 100%;
+	transition: 0.4s;
 }
 .navbar-brand{
 	width: auto;
 }
 .navbar-brand img{
 	width: 17%;
+	transition: 0.4s;
 }
 .navbar-collapse ul li{
 	padding: 8px;
@@ -82,16 +97,30 @@ header{
 }
 .navbar-collapse ul li a{
 	color: #000;
+	transition: 0.2s;
+}
+.navbar-collapse ul li a:hover{
+	color: #6b00ff;
+}
+/*navbar scrolling effects*/
+.navbar-scroll{
+	background: rgba(255,255,255,0.95);
+	box-shadow: 1px 1px 8px 8px rgba(79, 79, 79, 0.5);
+	width: 100%;
+	height: 80px;
+}
+.navbar-img-scroll img{
+	width: 13%;
 }
 .header-content{
 	width: 100%;
-	height: 45vh;
+	height: 80vh;
 	transform: translate(0,50%);
 }
 .header-title{
 	text-align: center;
 	font-family: font_6;
-	font-size: 5em;
+	font-size: 5.5em;
 	color: #6b00ff;
 	text-shadow: 1px 1px 3px #ccc;
 	text-transform: uppercase;
@@ -132,40 +161,41 @@ header{
 	font-size: 25px;
 	color: #4999f5;
 }
-.countdown-div{
+#countdown-sec .countdown-col{
 	width: 50%;
 	margin: 0 auto;
 	display: flex;
 }
-.countdown-div .countdown{
+.counter-day, .counter-hour, .counter-minute, .counter-second{
+	text-align: center;
 	width: 25%;
 	margin: 0 auto;
-	text-align: center;
 }
-.countdown-div .countdown .number{
+.counter-day{
+	color: #b9ce33;
+}
+.counter-hour{
+	color: #e50be5;
+}
+.counter-minute{
+	color: #e5950b;
+}
+.counter-second{
+	color: #42adf4;
+}
+.days, .hours, .minutes, .seconds{
 	text-align: center;
 	font-family: font_9;
+	font-size: 3.4em;
 	font-weight: bolder;
-	font-size: 3.3em;
 	line-height: 60px;
 }
-.countdown-div .countdown .time{
-	font-family: font_7;
+.smalltext{
 	font-size: 1.3em;
-	color: #f4b233;
-	/*text-shadow: 1px 1px 3px #ccc;*/
-}
-#days{
-	color: #2d549e;
-}
-#hours{
-	color: #c21e56;
-}
-#minutes{
-	color: #a53692;
-}
-#seconds{
-	color: #1c804b;
+	font-family: font_7;
+	margin-top: 0;
+	padding-top: 0;
+	line-height: 100%;
 }
 
 /* ================ Registration section ================ */
@@ -281,7 +311,7 @@ header{
 	padding: 20px 0;
 	box-shadow: 1px 1px 8px 8px #eee;
 	border:0;
-	transition: 0.5s;
+	transition: 0.3s;
 }
 .call-for-paper-subdivs:hover{
 	background: rgba(107, 0, 255,0.8);
@@ -319,22 +349,23 @@ header{
 }
 .section-btn-area a, .section-btn-area a:after{
 	background-size: 300%;
-	background-position: 71%;
+	background-position: 67%;
 	transition: 0.8s;
+}
+.section-btn-area #section-btn1, .section-btn-area #section-btn1:after{
+	background-position: 68%;
 }
 .section-btn-area a:hover, .section-btn-area a:hover:after{
 	background-position: 0%;
 	text-decoration: none;
-}
-  
+} 
 .section {
     margin: 10px;
     padding: 10px;
 }
-
-.topic {
-    margin: 10px;
-    padding: 10px;
+.section-btn-area #section-btn1:hover, .section-btn-area #section-btn1:hover:after{
+	background-position: 0%;
+	text-decoration: none;
 }
 
 /*======================== Programme committee ========================== */
@@ -432,6 +463,251 @@ header{
 	transform: scale(1.15);
 }
 
+/* ====================================================
+------------------- Contact Us page -------------------
+===================================================== */
+#contact-header{
+	width: 100%;
+	height: 55vh;
+	background-image: url(../images/3.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.contact-header-title{
+	width: 50%;
+	height: 50vh;
+	transform: translate(20%, 50%);
+}
+.contact-header-title h1{
+	font-family: font_6;
+	font-size: 3.5em;
+	color: #6b00ff;
+	text-shadow: 1px 1px 10px #ccc;
+}
+.contact-header-title small{
+	font-size: 1.4em;
+	font-family: font_10;
+	color: #c21e56;
+	text-shadow: 1px 1px 3px #ccc;
+}
+#contact-form-sec{
+	padding: 100px 0;
+	background: #f3f3f3;
+}
+.form-container{
+	width: 40%;
+	margin: 0 auto;
+}
+.form-content{
+	border-radius: 10px;
+	padding: 40px;
+	background: #fff;
+	box-shadow: 1px 1px 7px 7px #e7e7e7;
+}
+.form-content form input, .form-content form textarea{
+	padding: 10px 15px;
+	font-family: font_7;
+	font-size: 15px;
+	color: #555;
+	border: 2px solid #ccc;
+	transition: 0.3s;
+}
+.form-content form input:focus, .form-content form textarea:focus{
+	border-left: 2px solid #6b00ff;
+	border-top: 2px solid #c21e56;
+	border-right: 2px solid #c21e56;
+	border-bottom: 2px solid #6b00ff;
+	box-shadow: 1px 1px 4px 4px #e9e9e9;
+}
+.form-content form input[type=text], .form-content form textarea{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.form-content form input[type=email], .form-content form input[type=tel]{
+	width: 47%;
+	margin-bottom: 20px;
+}
+.form-content form input[type=tel]{
+	margin-left: 5%;
+}
+.submit-btn-div{
+	text-align: center;
+}
+.form-content form input[type=submit]{
+	border: 0;
+	color: #fff;
+	letter-spacing: 0.7px;
+	text-transform: uppercase;
+	font-family: font_10;
+	padding: 15px 40px;
+	background: linear-gradient(45deg, #6b00ff 50%, #c21e56 50%);
+	box-shadow: 1px 1px 7px 7px #eee;
+	position: relative;
+}
+.form-content form input[type=submit]:after{
+	position: absolute;
+	content: "";
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: linear-gradient(45deg, #6b00ff 50%, #c21e56 50%);
+	z-index: -1;
+}
+.form-content form input[type=submit], .form-content form input[type=submit]:after{
+	background-size: 300%;
+	background-position: 67%;
+	transition: 0.8s;
+}
+.form-content form input[type=submit]:hover, .form-content form input[type=submit]:hover:after{
+	background-position: 0%;
+	text-decoration: none;
+	box-shadow: 1px 1px 7px 7px #e9e9e9;
+	cursor: pointer;
+}
+
+/* ====================================================
+------------------- Registration page -------------------
+===================================================== */
+#reg-header{
+	width: 100%;
+	height: 55vh;
+	background-image: url(../images/2.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.reg-header-title{
+	width: 50%;
+	height: 50vh;
+	transform: translate(20%, 50%);
+}
+.reg-header-title h1{
+	font-family: font_6;
+	font-size: 3.5em;
+	color: #6b00ff;
+	text-shadow: 1px 1px 3px #ccc;
+}
+.reg-header-title small{
+	font-size: 1.4em;
+	font-family: font_10;
+	color: #c21e56;
+	text-shadow: 1px 1px 3px #ccc;
+}
+#reg-form-sec{
+	padding: 100px 0;
+	background: #f3f3f3;
+}
+.reg-form-container{
+	width: 50%;
+	margin: 0 auto;
+}
+.reg-form-content{
+	border-radius: 10px;
+	padding: 40px;
+	background: #fff;
+	box-shadow: 1px 1px 7px 7px #e7e7e7;
+}
+.reg-form-content form label{
+	font-family: font_10;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+.reg-form-content form .sub-label{
+	font-family: font_1;
+	font-size: 17px;
+	text-transform: none;
+}
+.reg-form-content form label span{
+	font-family: font_1;
+	font-size: 18px;
+	text-transform: none;
+}
+.reg-form-content form input{
+	padding: 10px 15px;
+	font-family: font_7;
+	font-size: 15px;
+	color: #555;
+	border: 2px solid #ccc;
+	transition: 0.3s;
+}
+.reg-form-content form input:focus, .reg-form-content form select:focus{
+	border-left: 2px solid #6b00ff;
+	border-top: 2px solid #c21e56;
+	border-right: 2px solid #c21e56;
+	border-bottom: 2px solid #6b00ff;
+	box-shadow: 1px 1px 4px 4px #e9e9e9;
+}
+.reg-form-content form input[type=text], .reg-form-content form input[type=email], .reg-form-content form input[type=file]{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.reg-form-content form select{
+	width: 47.5%;
+	padding: 10px 15px;
+	margin-bottom: 20px;
+	font-family: font_7;
+	font-size: 15px;
+	color: #888;
+	border: 2px solid #ccc;
+	transition: 0.3s;
+}
+.reg-form-content form #lunch, .reg-form-content form #dinner, .reg-form-content form #tour{
+	width: 100%;
+}
+.reg-form-content form select option{
+	font-size: 13px;
+	color: #555;
+}
+.submit-btn-div{
+	text-align: center;
+}
+.reg-form-content form input[type=submit]{
+	border: 0;
+	color: #fff;
+	letter-spacing: 0.7px;
+	text-transform: uppercase;
+	font-family: font_10;
+	padding: 15px 40px;
+	background: linear-gradient(45deg, #6b00ff 50%, #c21e56 50%);
+	box-shadow: 1px 1px 7px 7px #eee;
+	position: relative;
+}
+.reg-form-content form input[type=submit]:after{
+	position: absolute;
+	content: "";
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: linear-gradient(45deg, #6b00ff 50%, #c21e56 50%);
+	z-index: -1;
+}
+.reg-form-content form input[type=submit], .reg-form-content form input[type=submit]:after{
+	background-size: 300%;
+	background-position: 65.5%;
+	transition: 0.8s;
+}
+.reg-form-content form input[type=submit]:hover, .reg-form-content form input[type=submit]:hover:after{
+	background-position: 0%;
+	text-decoration: none;
+	box-shadow: 1px 1px 7px 7px #e9e9e9;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ===================== Footer ====================== */
 #footer-sec{
 	background: rgb(107, 0, 255);
@@ -442,7 +718,7 @@ header{
 	padding: 80px 100px 0px;
 }
 .footer-logo-img img{
-	width: 70%;
+	width: 55%;
 }
 .footer-sub-content h4{
 	font-family: font_11;
@@ -486,11 +762,25 @@ header{
 	color: #6b00ff;
 	background: rgb(237, 206, 24);
 }
+.footer-bottom-divider{
+	width: 90%;
+	margin: 0 auto 25px;
+	border-top: 1px solid #777;
+}
 .footer-lower-text{
 	padding-bottom: 25px;
 	font-family: font_1;
 	font-size: 15px;
 	text-transform: uppercase;
+}
+.footer-lower-text a{
+	color: #edce18;
+	transition: 0.05s;
+}
+.footer-lower-text a:hover{
+	text-decoration: none;
+	border-top: 2px solid #edce18;
+	border-bottom: 2px solid #edce18;
 }
 
 
