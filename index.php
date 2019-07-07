@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
     <!-- ColorBox CSS-->
     <link rel="stylesheet" href="css/colorbox.css">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -23,6 +25,8 @@
     <script src="js/jquery.jCounter-0.1.4.js"></script>
     <!-- ColorBox js-->
     <script type="text/javascript" src="js/jquery.colorbox.js"></script>
+    <!-- AOS js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- custom js -->
     <script type="text/javascript" src="js/custom.js"></script>
 
@@ -38,7 +42,6 @@
                 fallback: function() { console.log("count finished!") }
             });
         });
-        
     </script>
 </head>
 <body>
@@ -64,7 +67,7 @@
                             <li class="nav-item"><a class="nav-link" href="#call-for-paper-sec" id="navlink-cfp">Call For Papers</a></li>
                             <li class="nav-item"><a class="nav-link" href="#program-com-sec" id="navlink-pc">Programme Committee</a></li>
                             <li class="nav-item"><a class="nav-link" href="#gallery-sec" id="navlink-g">Gallery</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link" href="login.php">Login</a></li>
                         </ul>
                     </div>
                 </div>
@@ -84,23 +87,23 @@
 
     <!-- Countdown -->
     <div id="countdown-sec">
-        <div class="countdown-title">
+        <div class="countdown-title" data-aos="fade-up" data-aos-duration="1300">
             Let's countdown to ICSUSL'19!<br><span>#icsusl'19</span>
         </div>
         <div class="countdown countdown-col">
-            <div class="counter-day">
+            <div class="counter-day" data-aos="fade-up" data-aos-duration="1600">
                 <span class="days">00</span>
                 <div class="smalltext">Days</div>
             </div>
-            <div class="counter-hour">
+            <div class="counter-hour" data-aos="fade-up" data-aos-duration="1900">
                 <span class="hours">00</span>
                 <div class="smalltext">Hours</div>
             </div>
-            <div class="counter-minute">
+            <div class="counter-minute" data-aos="fade-up" data-aos-duration="2200">
                 <span class="minutes">00</span>
                 <div class="smalltext">Minutes</div>
             </div>
-            <div class="counter-second">
+            <div class="counter-second" data-aos="fade-up" data-aos-duration="2500">
                 <span class="seconds">00</span>
                 <div class="smalltext">Seconds</div>
             </div>
@@ -111,14 +114,14 @@
     <div class="continer-fluid padding text-center" id="reg-section">
         <div class="bg-color-dark">
             <div id="reg-section-content">
-                <div class="reg-sec-title">
+                <div class="reg-sec-title" data-aos="fade-up" data-aos-duration="1300">
                     <h1>Registration</h1>
                 </div>
 
                 <div class="container padding text-center">
                     <div class="row padding">
                         <div class="col-md-4">
-                            <div class="card side-cards">
+                            <div class="card side-cards" data-aos="fade-up" data-aos-duration="1800">
                                 <div class="back-div-left"></div>
                                 <img src="images/team.png" class="card-img-top" alt="...">
                                 <div class="card-body">
@@ -128,7 +131,7 @@
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="card center-card">
+                            <div class="card center-card" data-aos="fade-up" data-aos-duration="1500">
                                 <div class="back-div-center"></div>
                                 <img src="images/boy.png" class="card-img-top" alt="...">
                                 <div class="card-body">
@@ -145,7 +148,7 @@
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="card side-cards">
+                            <div class="card side-cards" data-aos="fade-up" data-aos-duration="1800">
                                 <div class="back-div-right"></div>
                                 <img src="images/team.png" class="card-img-top" alt="...">
                                 <div class="card-body">
@@ -162,7 +165,7 @@
 
     <!-- Call For Papers -->
     <div class="container-fluid padding text-center" id="call-for-paper-sec">
-        <div class="call-for-paper-title">
+        <div class="call-for-paper-title" data-aos="fade-up" data-aos-duration="1300">
             <h1>Call For Papers</h1>
             <p>
                 Final Paper Submission Guidelines for Authors
@@ -172,19 +175,19 @@
         <div class="container">
             <div class="row">
                 <div class=" col-sm-12 col-md-4">
-                    <div class="card padding call-for-paper-subdivs">
+                    <div class="card padding call-for-paper-subdivs" data-aos="fade-up" data-aos-duration="1600">
                         <h4>10<sup>th</sup> June 2019</h4>
                         <p class="card-text">Paper submission deadline</p>
                     </div>
                 </div>
                 <div class=" col-sm-12 col-md-4">
-                    <div class="card padding call-for-paper-subdivs">
+                    <div class="card padding call-for-paper-subdivs" data-aos="fade-up" data-aos-duration="2000">
                         <h4>10<sup>th</sup> June 2019</h4>
                         <p class="card-text">Paper submission deadline</p>
                     </div>
                 </div>
                 <div class=" col-sm-12 col-md-4">
-                    <div class="card padding call-for-paper-subdivs">
+                    <div class="card padding call-for-paper-subdivs" data-aos="fade-up" data-aos-duration="2400">
                         <h4>10<sup>th</sup> June 2019</h4>
                         <p class="card-text">Paper submission deadline</p>
                     </div>
@@ -192,7 +195,7 @@
             </div>
         </div>
         <br><br><br>
-        <div class="section-btn-area">
+        <div class="section-btn-area" data-aos="fade-up" data-aos-duration="2800">
             <a id="section-btn1" href="#">Download Guideline</a>
             <a href="#">Download Flyer</a>
             <a href="#">Paper Template</a>
@@ -205,14 +208,14 @@
     <div id="program-com-sec">
         <div class="bg-color-dark">
             <div class="program-com-content">
-                <div class="text-center program-com-title">
+                <div class="text-center program-com-title" data-aos="fade-up" data-aos-duration="1500">
                     <h1>Programme Committee</h1>
                 </div>
 
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12 col-md-6">
-                            <div class="committee-people-div">
+                            <div class="committee-people-div" data-aos="fade-up" data-aos-duration="2000">
                                 <h3>Conference Chairs</h3>
                                 <ul>
                                     <li><b>Genaral Chair - </b>Mr. Sample Person's Name</li>
@@ -223,7 +226,7 @@
                                     <li><b>Genaral Chair - </b>Mr. Sample Person's Name</li>
                                 </ul>
                             </div>
-                            <div class="committee-people-div">
+                            <div class="committee-people-div" data-aos="fade-up" data-aos-duration="2400">
                                 <h3>Advisor Board</h3>
                                 <ul>
                                     <li><b>Genaral Chair - </b>Mr. Sample Person's Name</li>
@@ -236,13 +239,13 @@
                         </div>
 
                         <div class="col-sm-12 col-md-6">
-                            <div class="committee-people-div">
+                            <div class="committee-people-div" data-aos="fade-up" data-aos-duration="2000">
                                 <h3>Editor-in-Chief</h3>
                                 <ul>
                                     <li><b>Genaral Chair - </b>Mr. Sample Person's Name</li>
                                 </ul>
                             </div>
-                            <div class="committee-people-div">
+                            <div class="committee-people-div" data-aos="fade-up" data-aos-duration="2400">
                                 <h3>Organizing Committee: Executive Council of Computer Society of Sri Lanka</h3>
                                 <ul>
                                     <li><b>Genaral Chair - </b>Mr. Sample Person's Name</li>
@@ -265,7 +268,7 @@
 
     <!-- Gallery -->
     <div class="container-fluid padding text-center" id="gallery-sec">
-        <div class="gallery-title">
+        <div class="gallery-title" data-aos="fade-up" data-aos-duration="1300">
             <h1>Gallery</h1>
         </div>
 
@@ -295,6 +298,9 @@
     <!-- footer section -->
     <?php require_once 'common/footer.php'; ?>
 
+    <script>
+        AOS.init();
+    </script>
 </body>
 <div class="se-pre-con"></div>
 </html>
