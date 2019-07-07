@@ -3,16 +3,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="keywords" content="HTML5, CSS3, Bootstrap, JQuery, PHP, MySQL">
     <meta name="author" content="Bhathiya Kariyawasam, Osusara Kammalawatta">
 
-	<title>ICSUSL 2019 | Admin Panel</title>
+    <title>ICSUSL 2019 | Admin Panel</title>
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
@@ -59,7 +59,7 @@
     </script>
 </head>
 <body>
-	<!-- Preloader -->
+    <!-- Preloader -->
     <script type="text/javascript">
         $(window).on("load", function() {
             $(".se-pre-con").fadeOut("slow");
@@ -68,23 +68,23 @@
 
     <nav class="navbar navbar-expand-md" id="admin-navbar">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.php"><img src="images/icsusl_logo.png"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-responsive" aria-controls="navbar-responsive" aria-expanded="false" aria-label="Toggle navigation">
+            <p id="admin-title">Admin Panel</p>
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-responsive" aria-controls="navbar-responsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button>
+            </button> -->
 
             <div class="collapse navbar-collapse" id="navbar-responsive">
                 <ul class="navbar-nav ml-auto">
-                	<li class="nav-item"><a class="nav-link" id="admin-logout-btn" href="logout.php">Logout</a></li>
+                    <li class="nav-item"><a class="nav-link" id="admin-logout-btn" href="logout.php">Logout</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <div id="admin-section">
-    	<div class="admin-container table-responsive">
-    		<?php
-    		$sql_user = "SELECT * FROM deligates";
+        <div class="admin-container table-responsive">
+            <?php
+            $sql_user = "SELECT * FROM deligates";
             $rt = $conn->query($sql_user);
             if ($rt->num_rows>0) {
                 $sql_user_rslt = mysqli_query($conn,$sql_user);
@@ -134,7 +134,7 @@
                         </td>
                         <td class="button-td">
                             <form id="std_ship_form">
-                                <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#std_ship_modal" id="<?php echo $row['id']; ?>" onclick="viewStdship(<?php echo $row["id"]; ?>)">View</button>
+                                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#std_ship_modal" id="<?php echo $row['id']; ?>" onclick="viewStdship(<?php echo $row["id"]; ?>)">View</button>
                             </form>
                         </td>
                     </tr>
@@ -143,9 +143,9 @@
             }else{
                 echo "<b>No deligates found.</b>";
             }
-    		?>	
-	    		</tbody>
-	    	</table>
+            ?>  
+                </tbody>
+            </table>
 
             <!-- Modals -->
             <div class="modal fade" id="bank_rec_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -164,7 +164,7 @@
               </div>
             </div>
 
-    	</div>
+        </div>
     </div>
 </body>
 <div class="se-pre-con"></div>

@@ -85,6 +85,14 @@ header{
 	position: relative;
 	z-index: 0;
 }
+#admin-title{
+	margin-top: 10px;
+	padding-left: 15px;
+	font-size: 2.5em;
+	font-family: font_8;
+	color: #9e9e9e;
+	border-left: 8px solid #2BBBAD;
+}
 .navbar-brand{
 	width: auto;
 }
@@ -362,10 +370,6 @@ header{
 .section-btn-area a:hover, .section-btn-area a:hover:after{
 	background-position: 0%;
 	text-decoration: none;
-} 
-.section {
-    margin: 10px;
-    padding: 10px;
 }
 .section-btn-area #section-btn1:hover, .section-btn-area #section-btn1:hover:after{
 	background-position: 0%;
