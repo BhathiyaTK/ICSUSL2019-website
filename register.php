@@ -74,7 +74,7 @@
                 <ul class="navbar-nav ml-auto">
                 	<li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="register.php">Registration</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.php">Login</a></li>
                 </ul>
             </div>
         </div>
@@ -139,9 +139,9 @@
 	    				<div class="col-md-12">
 	    					<select id="partipant_type" name="partipant_type">
 	    						<option value="">Select Participant Type</option>
-	    						<option value="pa">Participant / Author</option>
-	    						<option value="std">Student</option>
-	    						<option value="ca">Co-Author</option>
+	    						<option value="participant/author">Participant / Author</option>
+	    						<option value="student">Student</option>
+	    						<option value="co-author">Co-Author</option>
 	    					</select><div class="require-mark-1"></div>
 	    				</div>
 	    			</div>
