@@ -447,7 +447,6 @@ header{
 	position: absolute;
 	background: rgba(107, 0, 255, 0.8);
 	width: 27.5%;
-	height: 41.8%;
 	padding: 130px 0;
 	opacity: 0;
 	/*transform: scale(0);*/
@@ -607,7 +606,7 @@ header{
 	background: #f3f3f3;
 }
 .reg-form-container{
-	width: 50%;
+	width: 80%;
 	margin: 0 auto;
 }
 .reg-form-content{
@@ -875,7 +874,7 @@ table tbody .button-td{
 		font-size: 0.5em;
 		background: #0b213b;
 		/*background: rgb(237, 206, 24);*/
-		padding: 40px 70px;
+		padding: 40px 100px 40px 20px;
 	}
 
 	#countdown-sec div{
@@ -885,7 +884,48 @@ table tbody .button-td{
 	.countdown div{
 		margin-left: 10px;
 	}
-}
+
+	.img-icon{
+		position: absolute;
+		background: rgba(107, 0, 255, 0.8);
+		width: 27.5%;
+		opacity: 0;
+		/*transform: scale(0);*/
+		transition: 0.4s;
+	}
+
+	.reg-header-title h1{
+		font-family: font_6;
+		font-size: 2em;
+		color: #6b00ff;
+		text-shadow: 1px 1px 3px #ccc;
+	}
+
+	.reg-header-title small{
+		font-size: 1em;
+		font-family: font_10;
+		color: #c21e56;
+		text-shadow: 1px 1px 3px #ccc;
+	}
+
+	.login-header-title h1{
+		font-family: font_6;
+		font-size: 2em;
+		color: #6b00ff;
+		text-shadow: 1px 1px 10px #ccc;
+	}
+	
+	.login-header-title small{
+		font-size: 1em;
+		font-family: font_10;
+		color: #c21e56;
+		text-shadow: 1px 1px 3px #ccc;
+	}
+
+	.form-container{
+		width: 80%;
+		margin: 0 auto;
+	}
 
 @media (min-width: 576px) {
 	.header-title{
@@ -911,6 +951,39 @@ table tbody .button-td{
 
 	.countdown div{
 		margin-left: 10px;
+	}
+
+	.reg-header-title h1{
+		font-family: font_6;
+		font-size: 2em;
+		color: #6b00ff;
+		text-shadow: 1px 1px 3px #ccc;
+	}
+
+	.reg-header-title small{
+		font-size: 1em;
+		font-family: font_10;
+		color: #c21e56;
+		text-shadow: 1px 1px 3px #ccc;
+	}
+
+	.login-header-title h1{
+		font-family: font_6;
+		font-size: 2.5em;
+		color: #6b00ff;
+		text-shadow: 1px 1px 10px #ccc;
+	}
+	
+	.login-header-title small{
+		font-size: 1em;
+		font-family: font_10;
+		color: #c21e56;
+		text-shadow: 1px 1px 3px #ccc;
+	}
+
+	.form-container{
+		width: 60%;
+		margin: 0 auto;
 	}
 }
 
@@ -938,6 +1011,39 @@ table tbody .button-td{
 
 	.countdown div{
 		margin-left: 10px;
+	}
+
+	.reg-header-title h1{
+		font-family: font_6;
+		font-size: 3.5em;
+		color: #6b00ff;
+		text-shadow: 1px 1px 3px #ccc;
+	}
+
+	.reg-header-title small{
+		font-size: 1.4em;
+		font-family: font_10;
+		color: #c21e56;
+		text-shadow: 1px 1px 3px #ccc;
+	}
+
+	.login-header-title h1{
+		font-family: font_6;
+		font-size: 3.5em;
+		color: #6b00ff;
+		text-shadow: 1px 1px 10px #ccc;
+	}
+	
+	.login-header-title small{
+		font-size: 1.4em;
+		font-family: font_10;
+		color: #c21e56;
+		text-shadow: 1px 1px 3px #ccc;
+	}
+
+	.form-container{
+		width: 60%;
+		margin: 0 auto;
 	}
 }
 
@@ -992,5 +1098,38 @@ table tbody .button-td{
 
 	.countdown div{
 		margin-left: 10px;
+	}
+
+	.reg-header-title h1{
+		font-family: font_6;
+		font-size: 4.5em;
+		color: #6b00ff;
+		text-shadow: 1px 1px 3px #ccc;
+	}
+
+	.reg-header-title small{
+		font-size: 1.4em;
+		font-family: font_10;
+		color: #c21e56;
+		text-shadow: 1px 1px 3px #ccc;
+	}
+
+	.login-header-title h1{
+		font-family: font_6;
+		font-size: 3.5em;
+		color: #6b00ff;
+		text-shadow: 1px 1px 10px #ccc;
+	}
+
+	.login-header-title small{
+		font-size: 1.4em;
+		font-family: font_10;
+		color: #c21e56;
+		text-shadow: 1px 1px 3px #ccc;
+	}
+
+	.form-container{
+		width: 40%;
+		margin: 0 auto;
 	}
 }
