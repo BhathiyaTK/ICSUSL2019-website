@@ -360,6 +360,7 @@ header{
 	z-index: -1;
 }
 .section-btn-area a, .section-btn-area a:after{
+	margin: 10px;f
 	background-size: 300%;
 	background-position: 67%;
 	transition: 0.8s;
@@ -782,20 +783,6 @@ table tbody .button-td{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ===================== Footer ====================== */
 #footer-sec{
 	background: rgb(107, 0, 255);
@@ -873,19 +860,137 @@ table tbody .button-td{
 
 
 
+@media (min-width: 375px) {
+	.header-title{
+		text-align: center;
+		font-family: font_6;
+		font-size: 3.5em;
+		color: #6b00ff;
+		text-shadow: 1px 1px 3px #ccc;
+		text-transform: uppercase;
+	}
+
+	#countdown-sec{
+		display: flex;
+		font-size: 0.5em;
+		background: #0b213b;
+		/*background: rgb(237, 206, 24);*/
+		padding: 40px 70px;
+	}
+
+	#countdown-sec div{
+		margin-right: 5px;
+	}
+
+	.countdown div{
+		margin-left: 10px;
+	}
+}
 
 @media (min-width: 576px) {
+	.header-title{
+		text-align: center;
+		font-family: font_6;
+		font-size: 3.5em;
+		color: #6b00ff;
+		text-shadow: 1px 1px 3px #ccc;
+		text-transform: uppercase;
+	}
 
+	#countdown-sec{
+		display: flex;
+		font-size: 0.8em;
+		background: #0b213b;
+		/*background: rgb(237, 206, 24);*/
+		padding: 40px 70px;
+	}
+
+	#countdown-sec div{
+		margin-right: 5px;
+	}
+
+	.countdown div{
+		margin-left: 10px;
+	}
 }
 
 @media (min-width: 768px) {
+	.header-title{
+		text-align: center;
+		font-family: font_6;
+		font-size: 5.5em;
+		color: #6b00ff;
+		text-shadow: 1px 1px 3px #ccc;
+		text-transform: uppercase;
+	}
 
+	#countdown-sec{
+		display: flex;
+		font-size: 1em;
+		background: #0b213b;
+		/*background: rgb(237, 206, 24);*/
+		padding: 40px 70px;
+	}
+
+	#countdown-sec div{
+		margin-right: 5px;
+	}
+
+	.countdown div{
+		margin-left: 10px;
+	}
 }
 
 @media (min-width: 992px) {
+	.header-title{
+		text-align: center;
+		font-family: font_6;
+		font-size: 5.5em;
+		color: #6b00ff;
+		text-shadow: 1px 1px 3px #ccc;
+		text-transform: uppercase;
+	}
 
+	#countdown-sec{
+		display: flex;
+		font-size: 1em;
+		background: #0b213b;
+		/*background: rgb(237, 206, 24);*/
+		padding: 40px 70px;
+	}
+
+	#countdown-sec div{
+		margin-right: 5px;
+	}
+
+	.countdown div{
+		margin-left: 10px;
+	}
 }
 
 @media (min-width: 1200px) {
+	.header-title{
+		text-align: center;
+		font-family: font_6;
+		font-size: 5.5em;
+		color: #6b00ff;
+		text-shadow: 1px 1px 3px #ccc;
+		text-transform: uppercase;
+	}
 
+	#countdown-sec{
+		display: flex;
+		font-size: 1em;
+		background: #0b213b;
+		/*background: rgb(237, 206, 24);*/
+		padding: 40px 70px;
+	}
+
+	#countdown-sec div{
+		margin-right: 5px;
+	}
+
+	.countdown div{
+		margin-left: 10px;
+	}
 }
