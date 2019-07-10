@@ -73,8 +73,8 @@
                 </div>
             </nav>
             <div class="header-content">
-                <div class="header-title">
-                   National IT conference 2019
+                <div>
+                   <h1 class="header-title">National IT conference 2019</h1>
                 </div>
                 <br>
                 <div class="address-div">
@@ -195,12 +195,19 @@
             </div>
         </div>
         <br><br><br>
-        <div class="section-btn-area" data-aos="fade-up" data-aos-duration="2800">
-            <a id="section-btn1" href="#">Download Guideline</a>
-            <a href="#">Download Flyer</a>
-            <a href="#">Paper Template</a>
-            <a href="#">Submit Online</a>
+        <div class="container-fluid padding">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="section-btn-area" data-aos="fade-up" data-aos-duration="2800">
+                        <a class="btn" id="section-btn1" href="#">Download Guideline</a>
+                        <a class="btn" href="#">Download Flyer</a>
+                        <a class="btn" href="#">Paper Template</a>
+                        <a class="btn" href="#">Submit Online</a>
+                    </div>
+                </div>
+            </div>
         </div>
+   
         
     </div>
 

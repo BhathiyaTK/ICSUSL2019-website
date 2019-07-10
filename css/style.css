@@ -364,6 +364,7 @@ header{
 	z-index: -1;
 }
 .section-btn-area a, .section-btn-area a:after{
+	margin: 10px;f
 	background-size: 300%;
 	background-position: 67%;
 	transition: 0.8s;
@@ -450,7 +451,6 @@ header{
 	position: absolute;
 	background: rgba(107, 0, 255, 0.8);
 	width: 27.5%;
-	height: 41.8%;
 	padding: 130px 0;
 	opacity: 0;
 	/*transform: scale(0);*/
@@ -610,7 +610,7 @@ header{
 	background: #f3f3f3;
 }
 .reg-form-container{
-	width: 50%;
+	width: 80%;
 	margin: 0 auto;
 }
 .reg-form-content{
@@ -830,20 +830,6 @@ table tbody .button-td{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ===================== Footer ====================== */
 #footer-sec{
 	background: rgb(107, 0, 255);
@@ -919,9 +905,194 @@ table tbody .button-td{
 	border-bottom: 2px solid #edce18;
 }
 
+@media (min-width: 375px) {
+	.header-title{
+		text-align: center;
+		font-family: font_6;
+		font-size: 3.5em;
+		color: #6b00ff;
+		text-shadow: 1px 1px 3px #ccc;
+		text-transform: uppercase;
+	}
 
-@media (max-width: 768px) {
-	.navbar-brand{
+	#countdown-sec{
+		display: flex;
+		font-size: 0.5em;
+		background: #0b213b;
+		/*background: rgb(237, 206, 24);*/
+		padding: 40px 100px 40px 20px;
+	}
+
+	#countdown-sec div{
+		margin-right: 5px;
+	}
+
+	.countdown div{
+		margin-left: 10px;
+	}
+
+	.img-icon{
+		position: absolute;
+		background: rgba(107, 0, 255, 0.8);
+		width: 27.5%;
+		opacity: 0;
+		/*transform: scale(0);*/
+		transition: 0.4s;
+	}
+
+	.reg-header-title h1{
+		font-family: font_6;
+		font-size: 2em;
+		color: #6b00ff;
+		text-shadow: 1px 1px 3px #ccc;
+	}
+
+	.reg-header-title small{
+		font-size: 1em;
+		font-family: font_10;
+		color: #c21e56;
+		text-shadow: 1px 1px 3px #ccc;
+	}
+
+	.login-header-title h1{
+		font-family: font_6;
+		font-size: 2em;
+		color: #6b00ff;
+		text-shadow: 1px 1px 10px #ccc;
+	}
+	
+	.login-header-title small{
+		font-size: 1em;
+		font-family: font_10;
+		color: #c21e56;
+		text-shadow: 1px 1px 3px #ccc;
+	}
+
+	.form-container{
+		width: 80%;
+		margin: 0 auto;
+	}
+
+@media (min-width: 576px) {
+	.header-title{
+		text-align: center;
+		font-family: font_6;
+		font-size: 3.5em;
+		color: #6b00ff;
+		text-shadow: 1px 1px 3px #ccc;
+		text-transform: uppercase;
+	}
+
+	#countdown-sec{
+		display: flex;
+		font-size: 0.8em;
+		background: #0b213b;
+		/*background: rgb(237, 206, 24);*/
+		padding: 40px 70px;
+	}
+
+	#countdown-sec div{
+		margin-right: 5px;
+	}
+
+	.countdown div{
+		margin-left: 10px;
+	}
+
+	.reg-header-title h1{
+		font-family: font_6;
+		font-size: 2em;
+		color: #6b00ff;
+		text-shadow: 1px 1px 3px #ccc;
+	}
+
+	.reg-header-title small{
+		font-size: 1em;
+		font-family: font_10;
+		color: #c21e56;
+		text-shadow: 1px 1px 3px #ccc;
+	}
+
+	.login-header-title h1{
+		font-family: font_6;
+		font-size: 2.5em;
+		color: #6b00ff;
+		text-shadow: 1px 1px 10px #ccc;
+	}
+	
+	.login-header-title small{
+		font-size: 1em;
+		font-family: font_10;
+		color: #c21e56;
+		text-shadow: 1px 1px 3px #ccc;
+	}
+
+	.form-container{
+		width: 60%;
+		margin: 0 auto;
+	}
+}
+
+@media (min-width: 768px) {
+	.header-title{
+		text-align: center;
+		font-family: font_6;
+		font-size: 5.5em;
+		color: #6b00ff;
+		text-shadow: 1px 1px 3px #ccc;
+		text-transform: uppercase;
+	}
+
+	#countdown-sec{
+		display: flex;
+		font-size: 1em;
+		background: #0b213b;
+		/*background: rgb(237, 206, 24);*/
+		padding: 40px 70px;
+	}
+
+	#countdown-sec div{
+		margin-right: 5px;
+	}
+
+	.countdown div{
+		margin-left: 10px;
+	}
+
+	.reg-header-title h1{
+		font-family: font_6;
+		font-size: 3.5em;
+		color: #6b00ff;
+		text-shadow: 1px 1px 3px #ccc;
+	}
+
+	.reg-header-title small{
+		font-size: 1.4em;
+		font-family: font_10;
+		color: #c21e56;
+		text-shadow: 1px 1px 3px #ccc;
+	}
+
+	.login-header-title h1{
+		font-family: font_6;
+		font-size: 3.5em;
+		color: #6b00ff;
+		text-shadow: 1px 1px 10px #ccc;
+	}
+	
+	.login-header-title small{
+		font-size: 1.4em;
+		font-family: font_10;
+		color: #c21e56;
+		text-shadow: 1px 1px 3px #ccc;
+	}
+
+	.form-container{
+		width: 60%;
+		margin: 0 auto;
+	}
+  
+  .navbar-brand{
 		width: 20%;
 	}
 	.navbar-brand img{
@@ -931,21 +1102,21 @@ table tbody .button-td{
 		left: 10px;
 	}
 	.navbar-toggler{
-   		display: block;
+  	display: block;
 		position: absolute;
-    	top: 0;
-    	right: 25px;
-    	margin-top: 20px;
-    	background: #6b00ff;
+   	top: 0;
+   	right: 25px;
+   	margin-top: 20px;
+   	background: #6b00ff;
 	}
 	.navbar-toggler .navbar-toggler-icon{
-    	color: #fff;
-    	margin-top: 5px;
-    }
-    .navbar-collapse{
-    	background: #6b00ff;
-    	padding: 5px 20px;
-    }
+   	color: #fff;
+   	margin-top: 5px;
+  }
+  .navbar-collapse{
+   	background: #6b00ff;
+   	padding: 5px 20px;
+  }
     .navbar-collapse ul li a{
 		color: #ddd;
 		transition: 0.2s;
@@ -995,13 +1166,92 @@ table tbody .button-td{
 	}
 	.main-box:hover .img-box img{
 		transform: scale(1.15);
-	}
+  }
 }
 
 @media (min-width: 992px) {
+	.header-title{
+		text-align: center;
+		font-family: font_6;
+		font-size: 5.5em;
+		color: #6b00ff;
+		text-shadow: 1px 1px 3px #ccc;
+		text-transform: uppercase;
+	}
 
+	#countdown-sec{
+		display: flex;
+		font-size: 1em;
+		background: #0b213b;
+		/*background: rgb(237, 206, 24);*/
+		padding: 40px 70px;
+	}
+
+	#countdown-sec div{
+		margin-right: 5px;
+	}
+
+	.countdown div{
+		margin-left: 10px;
+	}
 }
 
 @media (min-width: 1200px) {
+	.header-title{
+		text-align: center;
+		font-family: font_6;
+		font-size: 5.5em;
+		color: #6b00ff;
+		text-shadow: 1px 1px 3px #ccc;
+		text-transform: uppercase;
+	}
 
+	#countdown-sec{
+		display: flex;
+		font-size: 1em;
+		background: #0b213b;
+		/*background: rgb(237, 206, 24);*/
+		padding: 40px 70px;
+	}
+
+	#countdown-sec div{
+		margin-right: 5px;
+	}
+
+	.countdown div{
+		margin-left: 10px;
+	}
+
+	.reg-header-title h1{
+		font-family: font_6;
+		font-size: 4.5em;
+		color: #6b00ff;
+		text-shadow: 1px 1px 3px #ccc;
+	}
+
+	.reg-header-title small{
+		font-size: 1.4em;
+		font-family: font_10;
+		color: #c21e56;
+		text-shadow: 1px 1px 3px #ccc;
+	}
+
+	.login-header-title h1{
+		font-family: font_6;
+		font-size: 3.5em;
+		color: #6b00ff;
+		text-shadow: 1px 1px 10px #ccc;
+	}
+
+	.login-header-title small{
+		font-size: 1.4em;
+		font-family: font_10;
+		color: #c21e56;
+		text-shadow: 1px 1px 3px #ccc;
+	}
+
+	.form-container{
+		width: 40%;
+		margin: 0 auto;
+	}
 }
