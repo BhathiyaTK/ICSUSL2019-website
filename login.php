@@ -76,7 +76,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
         <div class="container-fluid">
             <a class="navbar-brand" href="index.php"><img src="images/icsusl_logo.png"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-responsive" aria-controls="navbar-responsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"><i class="fas fa-bars fa-lg"></i></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbar-responsive">

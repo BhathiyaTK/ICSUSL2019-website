@@ -40,6 +40,27 @@
             $(".se-pre-con").fadeOut("slow");
         });
 
+        $(document).ready(function(){
+        	$("#bank_rec_div").hide();
+        	$("#std_proof_div").hide();
+        });
+
+        $(function(){
+        	$("#partipant_type").on('change', function(){
+        		var selVal = $("#partipant_type").val();
+        		if ((selVal == 'author')||(selVal == 'participant/co-author')) {
+        			$("#bank_rec_div").show().fadeIn('slow');
+        			$("#std_proof_div").hide().fadeOut('slow');
+        		}else if(selVal == 'student'){
+        			$("#std_proof_div").show().fadeIn('slow');
+        			$("#bank_rec_div").show().fadeIn('slow');
+        		}else if((selVal == 'ars-author')||(selVal == '')){
+        			$("#bank_rec_div").hide().fadeOut('slow');
+        			$("#std_proof_div").hide().fadeOut('slow');
+        		}
+        	});
+        });
+
         // register form ajax request
         $(function(){
             $("#register-form").submit(function(e2){
@@ -67,7 +88,7 @@
         <div class="container-fluid">
             <a class="navbar-brand" href="index.php"><img src="images/icsusl_logo.png"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-responsive" aria-controls="navbar-responsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"><i class="fas fa-bars fa-lg"></i></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbar-responsive">
@@ -136,22 +157,23 @@
 	    			<br>
 	    			<label>Documents <span>(in PDF, PNG or JPG format)</span></label>
 	    			<div class="row">
-	    				<div class="col-md-12">
+	    				<div class="col-md-6">
 	    					<select id="partipant_type" name="partipant_type">
 	    						<option value="">Select Participant Type</option>
-	    						<option value="participant/author">Participant / Author</option>
+	    						<option value="author">Author</option>
+	    						<option value="participant/co-author">Co-Author / Participant</option>
 	    						<option value="student">Student</option>
-	    						<option value="co-author">Co-Author</option>
+	    						<option value="ars-author">ARS Author</option>
 	    					</select><div class="require-mark-1"></div>
 	    				</div>
 	    			</div>
 	    			<div class="row">
-	    				<div class="col-md-6">
-	    					<label class="sub-label">Bank Payment Receipt</label>
+	    				<div class="col-md-6" id="bank_rec_div">
+	    					<label class="sub-label">Upload Bank Payment Receipt</label>
 	    					<input type="file" name="payment_receipt" id="payment_receipt"><div class="require-mark-2"></div>
 	    				</div>
-	    				<div class="col-md-6">
-	    					<label class="sub-label">Proof of Studentship</label>
+	    				<div class="col-md-6" id="std_proof_div">
+	    					<label class="sub-label">Upload Proof of Studentship</label>
 	    					<input type="file" name="studentship" id="studentship"><div class="require-mark-2"></div>
 	    				</div>
 	    			</div>
@@ -186,8 +208,8 @@
 	    						<div class="col-md-12">
 			    					<select id="tour" name="tour">
 			    						<option value="">Confirm Your Participation</option>
-			    						<option value="yes">Yes</option>
-			    						<option value="no">No</option>
+			    						<option value="option1">Option 1</option>
+			    						<option value="option2">Option 2</option>
 			    					</select>
 			    				</div>
 	    					</div>
