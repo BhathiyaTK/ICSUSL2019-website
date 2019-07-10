@@ -84,7 +84,7 @@ if ($row["stdship_appr"] == "Approved") {
   </div>
   <br>
   <div>
-    <p class="std"><?php echo "Bank receipt status : <b>".$row["stdship_appr"]."</b>" ;?></p>
+    <p class="std"><?php echo "Studentship Proofment status : <b>".$row["stdship_appr"]."</b>" ;?></p>
   </div>
 </div>
 <div class="modal-footer">
