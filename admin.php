@@ -14,6 +14,7 @@
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
     <!-- ColorBox CSS-->
@@ -169,34 +170,38 @@
     </div>
     <div class="filter-div">
         <div class="row">
-            <div class="col-md-3 col-sm-12">
+            <div class="col-md-4 col-sm-12">
                 <form id="filter-form1">
                     <label>Participant type</label>
-                    <div class="row">
-                        <div class="col-md-7">
-                            <select name="filters1" id="filters1" class="form-control form-control-sm">
-                                <option value="all" selected>All</option>
-                                <option value="author">Author</option>
-                                <option value="participant/co-author">Co-Author / Participant</option>
-                                <option value="student">Student</option>
-                                <option value="ars-author">ARS Author</option>
-                            </select>
-                        </div>
-                        <div class="col-md-1">
-                            <input type="submit" name="filter-btn1" id="filter-btn1" value="Filter" class="btn btn-success btn-sm">
+                    <div class="admin_form_opt">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-10">
+                                <select name="filters1" id="filters1" class="form-control form-control-sm">
+                                    <option value="all" selected>All</option>
+                                    <option value="author">Author</option>
+                                    <option value="participant/co-author">Co-Author / Participant</option>
+                                    <option value="student">Student</option>
+                                    <option value="ars-author">ARS Author</option>
+                                </select>
+                            </div>
+                            <div class="col-md-1 col-sm-10">
+                                <input type="submit" name="filter-btn1" id="filter-btn1" value="Filter" class="btn btn-success btn-sm">
+                            </div>
                         </div>
                     </div>
                 </form>
             </div>
-            <div class="col-md-5 col-sm-12">
+            <div class="col-md-6 col-sm-12">
                 <form id="filter-form2">
                     <label>Paper Title</label>
-                    <div class="row">
-                        <div class="col-md-5">
-                            <input type="text" name="filters2" id="filters2" class="form-control form-control-sm" placeholder="Paper Title here...">
-                        </div>
-                        <div class="col-md-1">
-                            <input type="submit" name="filter-btn2" id="filter-btn2" value="Filter" class="btn btn-success btn-sm">
+                    <div class="admin_form_opt">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-10">
+                                <input type="text" name="filters2" id="filters2" class="form-control form-control-sm" placeholder="Paper Title here...">
+                            </div>
+                            <div class="col-md-1 col-sm-10">
+                                <input type="submit" name="filter-btn2" id="filter-btn2" value="Filter" class="btn btn-success btn-sm">
+                            </div>
                         </div>
                     </div>
                 </form>
