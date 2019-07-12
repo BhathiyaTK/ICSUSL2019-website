@@ -166,7 +166,7 @@ header{
 /* ================ Countdown section ================== */
 #countdown-sec{
 	display: flex;
-	background: #781e34;
+	background: #1c1c1c;
 	/*background: rgb(237, 206, 24);*/
 	padding: 40px 70px;
 }
@@ -810,7 +810,7 @@ table tbody .button-td{
 
 /* ===================== Footer ====================== */
 #footer-sec{
-	background: rgb(107, 0, 255);
+	background: rgb(28,28,28);
 	background-image: url(../images/pattern.png);
 	background-size: cover;
 }
@@ -897,7 +897,7 @@ table tbody .button-td{
 	#countdown-sec{
 		display: flex;
 		font-size: 0.5em;
-		background: #0b213b;
+		background: #1c1c1c;
 		/*background: rgb(237, 206, 24);*/
 		padding: 40px 100px 40px 20px;
 	}
@@ -965,7 +965,7 @@ table tbody .button-td{
 	#countdown-sec{
 		display: flex;
 		font-size: 0.8em;
-		background: #781e34;
+		background: #1c1c1c;
 		/*background: rgb(237, 206, 24);*/
 		padding: 40px 70px;
 	}
@@ -1025,7 +1025,7 @@ table tbody .button-td{
 	#countdown-sec{
 		display: flex;
 		font-size: 1em;
-		background: #781e34;
+		background: #1c1c1c;
 		/*background: rgb(237, 206, 24);*/
 		padding: 40px 70px;
 	}
@@ -1138,7 +1138,7 @@ table tbody .button-td{
 	#countdown-sec{
 		display: flex;
 		font-size: 1em;
-		background: #781e34;
+		background: #1c1c1c;
 		/*background: rgb(237, 206, 24);*/
 		padding: 40px 70px;
 	}
@@ -1165,7 +1165,7 @@ table tbody .button-td{
 	#countdown-sec{
 		display: flex;
 		font-size: 1em;
-		background: #781e34;
+		background: #1c1c1c;
 		/*background: rgb(237, 206, 24);*/
 		padding: 40px 70px;
 	}

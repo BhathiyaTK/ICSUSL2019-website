@@ -2,7 +2,7 @@
 <footer>
     <div class="container-fluid padding text-light" id="footer-sec">
         <div class="row footer-content">
-            <div class="col-md-3 footer-sub-content">
+            <div class="col-md-4 footer-sub-content">
                 <h4>Contact Us</h4>
                 <div class="footer-divider"></div>
                 <p class="footer-event-address">Email: icsusl2019@crkd.sab.ac.lk <br>Phone: (045) 22 80013</p>
@@ -10,7 +10,7 @@
                     <a href="123.html"><div class="social-link"><i class="fab fa-facebook-f fa-lg"></i></div></a>
                 </div>
             </div>
-            <div class="col-md-5 footer-sub-content">
+            <div class="col-md-4 footer-sub-content">
                 <h4>Venue</h4>
                 <div class="footer-divider"></div>
                 <p class="footer-event-date">14<sup>th</sup> and 15<sup>th</sup> November 2019</p>
