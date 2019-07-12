@@ -12,6 +12,7 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
     <!-- ColorBox CSS-->
@@ -47,7 +48,7 @@
 <body>
     <!-- Preloader -->
     <script type="text/javascript">
-        $(window).on("load", function() {
+        $(window).on("load", function(){
             $(".se-pre-con").fadeOut("slow");
         });
     </script>
@@ -64,9 +65,9 @@
                     <div class="collapse navbar-collapse" id="navbar-responsive">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item"><a class="nav-link" href="register.php">Registration</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#call-for-paper-sec" id="navlink-cfp">Call For Papers</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#program-com-sec" id="navlink-pc">Programme Committee</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#gallery-sec" id="navlink-g">Gallery</a></li>
+                            <li class="nav-item" id="navlink-cfp1"><a class="nav-link" href="#call-for-paper-sec" id="navlink-cfp">Call For Papers</a></li>
+                            <li class="nav-item" id="navlink-pc1"><a class="nav-link" href="#program-com-sec" id="navlink-pc">Programme Committee</a></li>
+                            <li class="nav-item" id="navlink-g1"><a class="nav-link" href="#gallery-sec" id="navlink-g">Gallery</a></li>
                             <li class="nav-item"><a class="nav-link" href="login.php">Login</a></li>
                         </ul>
                     </div>
@@ -120,7 +121,7 @@
 
                 <div class="container padding text-center">
                     <div class="row padding">
-                        <div class="col-md-4">
+                        <div class="col-md-4 col-sm-12">
                             <div class="card side-cards" data-aos="fade-up" data-aos-duration="1800">
                                 <div class="back-div-left"></div>
                                 <img src="images/team.png" class="card-img-top" alt="...">
@@ -130,7 +131,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 col-sm-12">
                             <div class="card center-card" data-aos="fade-up" data-aos-duration="1500">
                                 <div class="back-div-center"></div>
                                 <img src="images/boy.png" class="card-img-top" alt="...">
@@ -147,7 +148,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 col-sm-12">
                             <div class="card side-cards" data-aos="fade-up" data-aos-duration="1800">
                                 <div class="back-div-right"></div>
                                 <img src="images/team.png" class="card-img-top" alt="...">
@@ -174,19 +175,19 @@
 
         <div class="container">
             <div class="row">
-                <div class=" col-sm-12 col-md-4">
+                <div class="col-sm-12 col-md-4">
                     <div class="card padding call-for-paper-subdivs" data-aos="fade-up" data-aos-duration="1600">
                         <h4>10<sup>th</sup> June 2019</h4>
                         <p class="card-text">Paper submission deadline</p>
                     </div>
                 </div>
-                <div class=" col-sm-12 col-md-4">
+                <div class="col-sm-12 col-md-4">
                     <div class="card padding call-for-paper-subdivs" data-aos="fade-up" data-aos-duration="2000">
                         <h4>10<sup>th</sup> June 2019</h4>
                         <p class="card-text">Paper submission deadline</p>
                     </div>
                 </div>
-                <div class=" col-sm-12 col-md-4">
+                <div class="col-sm-12 col-md-4">
                     <div class="card padding call-for-paper-subdivs" data-aos="fade-up" data-aos-duration="2400">
                         <h4>10<sup>th</sup> June 2019</h4>
                         <p class="card-text">Paper submission deadline</p>

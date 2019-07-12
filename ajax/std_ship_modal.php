@@ -45,7 +45,7 @@ while ($row=$result->fetch_assoc()) {
     text-align: center;
   }
   #modal_body img{
-    width: auto;
+    width: 100%;
   }
   #modal_body .std{
     font-family: font_7;

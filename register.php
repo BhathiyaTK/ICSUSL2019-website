@@ -12,6 +12,7 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
     <!-- ColorBox CSS-->
@@ -118,38 +119,38 @@
 	    			<br>
 	    			<label>Bio details</label>
 	    			<div class="row">
-	    				<div class="col-md-12">
+	    				<div class="col-md-12 col-sm-12">
 	    					<input type="text" name="full_name" id="full_name" placeholder="Full Name"><div class="require-mark"></div>
 	    				</div>
 	    			</div>
 	    			<div class="row">
-	    				<div class="col-md-6">
+	    				<div class="col-md-6 col-sm-12">
 	    					<input type="text" name="paper_id" id="paper_id" placeholder="Paper ID/ Title">
 	    				</div>
-	    				<div class="col-md-6">
+	    				<div class="col-md-6 col-sm-12">
 	    					<input type="text" name="name_on_badge" id="name_on_badge" placeholder="Name on the Badge"><div class="require-mark"></div>
 	    				</div>
 	    			</div>
 	    			<div class="row">
-	    				<div class="col-md-6">
+	    				<div class="col-md-6 col-sm-12">
 	    					<input type="text" name="affiliation" id="affiliation" placeholder="Affiliation"><div class="require-mark"></div>
 	    				</div>
-	    				<div class="col-md-6">
+	    				<div class="col-md-6 col-sm-12">
 	    					<input type="text" name="country" id="country" placeholder="Country"><div class="require-mark"></div>
 	    				</div>
 	    			</div>
 	    			<div class="row">
-	    				<div class="col-md-7">
+	    				<div class="col-md-7 col-sm-12">
 	    					<input type="email" name="email" id="email" placeholder="Email"><div class="require-mark"></div>
 	    				</div>
-	    				<div class="col-md-5">
+	    				<div class="col-md-5 col-sm-12">
 	    					<input type="text" name="phone" id="phone" placeholder="Phone">
 	    				</div>
 	    			</div>
 	    			<br>
 	    			<label>Billing Informations</label>
 	    			<div class="row">
-	    				<div class="col-md-12">
+	    				<div class="col-md-12 col-sm-12">
 	    					<input type="text" name="receipt_name" id="receipt_name" placeholder="Receipt Name">
 	    					<input type="text" name="receipt_address" id="receipt_address" placeholder="Receipt Address">
 	    				</div>
@@ -157,7 +158,7 @@
 	    			<br>
 	    			<label>Documents <span>(in PDF, PNG or JPG format)</span></label>
 	    			<div class="row">
-	    				<div class="col-md-6">
+	    				<div class="col-md-6 col-sm-12">
 	    					<select id="partipant_type" name="partipant_type">
 	    						<option value="">Select Participant Type</option>
 	    						<option value="author">Author</option>
@@ -168,18 +169,18 @@
 	    				</div>
 	    			</div>
 	    			<div class="row">
-	    				<div class="col-md-6" id="bank_rec_div">
+	    				<div class="col-md-6 col-sm-12" id="bank_rec_div">
 	    					<label class="sub-label">Upload Bank Payment Receipt</label>
 	    					<input type="file" name="payment_receipt" id="payment_receipt"><div class="require-mark-2"></div>
 	    				</div>
-	    				<div class="col-md-6" id="std_proof_div">
+	    				<div class="col-md-6 col-sm-12" id="std_proof_div">
 	    					<label class="sub-label">Upload Proof of Studentship</label>
 	    					<input type="file" name="studentship" id="studentship"><div class="require-mark-2"></div>
 	    				</div>
 	    			</div>
 	    			<br>
 	    			<div class="row">
-	    				<div class="col-md-7">
+	    				<div class="col-md-7 col-sm-12">
 	    					<label>Meal Preference</label>
 	    					<div class="row">
 	    						<div class="col-md-6">
@@ -202,7 +203,7 @@
 			    				</div>
 	    					</div>
 	    				</div>
-	    				<div class="col-md-5">
+	    				<div class="col-md-5 col-sm-12">
 	    					<label>Tour Participation</label>
 	    					<div class="row">
 	    						<div class="col-md-12">

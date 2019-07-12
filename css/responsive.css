@@ -1,0 +1,708 @@
+/* ============================================================================
+-------------------------------------------------------------------------------
+					All Website Responsiveness styles
+-------------------------------------------------------------------------------
+============================================================================= */
+
+@media (max-width: 420px) {
+	/* ========== common ============== */
+	.col-md-3, .col-md-4, .col-md-5, .col-sm-12{
+		padding-left: 0;
+		padding-right: 0; 
+	}
+	/* =========== navbar ============== */
+	.navbar-brand{
+		width: 20%;
+	}
+	.navbar-brand img{
+		width: 100%;
+		position: relative;
+		top: 0px;
+		left: 10px;
+	}
+	.navbar-toggler{
+   		display: block;
+		position: absolute;
+    	top: 0;
+    	right: 25px;
+    	margin-top: 20px;
+    	background: #6b00ff;
+	}
+	.navbar-toggler .navbar-toggler-icon{
+    	color: #fff;
+    	margin-top: 5px;
+    }
+    .navbar-collapse{
+    	background: #6b00ff;
+    	padding: 5px 20px;
+    	box-shadow: 1px 1px 8px 8px rgba(79, 79, 79, 0.3);
+    }
+    .navbar-collapse ul li a{
+		color: #ddd;
+		transition: 0.2s;
+	}
+	.navbar-collapse ul li a:hover{
+		color: #fff;
+	}
+	/* ========================= Header ======================= */
+	.header-content{
+		width: 100%;
+		height: 45vh;
+	}
+	.header-title{
+		font-size: 4em;
+	}
+	.address-div .place{
+		font-size:1.8em;
+	}
+	.address-div .date{
+		margin-top: 25px;
+		font-size:1.3em;
+	}
+	/* ================ Countdown section ================== */
+	#countdown-sec{
+		display: block;
+		padding: 40px 20px;
+	}
+	.countdown-title{
+		width: 100%;
+		font-size: 1.7em;
+		font-weight: normal; 
+		text-align: center;
+		letter-spacing: 1px;
+	}
+	.countdown-title span{
+		font-weight: normal;
+		font-size: 20px;
+	}
+	#countdown-sec .countdown-col{
+		width: 100%;
+		margin: 15px auto 0;
+		display: flex;
+	}
+	.days, .hours, .minutes, .seconds{
+		font-size: 2.5em;
+		font-weight: normal;
+	}
+	.smalltext{
+		font-size: 1em;
+	}
+	/* ================ Registration section ================ */
+	#reg-section-content{
+		width: 90%;
+		margin: 0 auto;
+		padding: 80px 0 70px;
+	}
+	.reg-sec-title{
+		margin-bottom: 20px;
+	}
+	.card{
+		width: 100%;
+		margin: 0 auto;
+		border-radius: 20px;
+		border: 4px solid #fff;
+	}
+	.card-body{
+		padding: 0 30px 40px;
+	}
+	.card img{
+		margin: 25px auto 0;
+	}
+	.side-cards{
+		margin: 30px 0;
+	}
+	/* ==================== Call for papers ================== */
+	#call-for-paper-sec{
+		padding: 80px 0;
+		background: #f3f3f3;
+	}
+	.call-for-paper-title{
+		margin-bottom: 50px;
+	}
+	.call-for-paper-title h1{
+		font-family: font_6;
+		color: #000;
+	}
+	.call-for-paper-title p{
+		font-size: 16px;
+	}
+	.call-for-paper-subdivs{
+		width: 90%;
+		margin: 7px auto;
+		padding: 20px 0;
+	}
+	.section-btn-area a{
+		font-family: font_10;
+		text-transform: uppercase;
+		color: #fff;
+		padding: 15px 40px;
+		margin: 10px auto;
+		background: linear-gradient(45deg, #6b00ff 50%, #c21e56 50%);
+		box-shadow: 1px 1px 5px 5px #ddd;
+		position: relative;
+		display: inline-block;
+	}
+	/* ================= committee =================== */
+	.program-com-content{
+		padding: 80px 0;
+		color: #fff;
+	}
+	.program-com-title{
+		margin-bottom: 50px;
+	}
+	.committee-people-div{
+		width: 90%;
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+	.committee-people-div h3{
+		font-size: 23px;
+	}
+	.committee-people-div ul{
+		margin: 15px 0 0 20px;
+	}
+	.committee-people-div ul li{
+		font-family: font_7;
+		margin: 3px 0;
+		font-size: 16px;
+	}
+	/* ========================= Gallery ======================= */
+	.main-box{
+		width: 100%;
+		height: auto;
+		display: inline-flex;
+	}
+	.img-box{
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+	}
+	.img-box img{
+		position: relative;
+		width: 100%;
+		transition: 0.4s;
+	}
+	.img-icon{
+		position: absolute;
+		background: rgba(107, 0, 255, 0.8);
+		width: 90.5%;
+		height: 111px;
+		padding: 109.5px 0;
+		opacity: 0;
+		transition: 0.4s;
+	}
+	.img-icon a{
+		padding: 13px;
+		color: #6b00ff;
+		background: #edce18;
+		border: 4px solid #c21e56;
+		border-radius: 50%;
+		transition: 0.4s;
+		transform: scale(0);
+	}
+	.main-box:hover .img-icon{
+		opacity: 1;
+	}
+	.main-box:hover .img-icon a{
+		transform: scale(1);
+	}
+	.main-box:hover .img-box img{
+		transform: scale(1.15);
+	}
+	/* ===================== Footer ====================== */
+	#footer-sec{
+		background: rgb(107, 0, 255);
+		background-image: url(../images/pattern.png);
+		background-size: cover;
+		background-position: 40%, right;
+	}
+	.footer-content{
+		padding: 50px 0px 0px;
+		text-align: center;
+	}
+	.footer-logo-img img{
+		width: 45%;
+		margin-bottom: 30px;
+	}
+	.footer-sub-content h4{
+		font-family: font_11;
+	}
+	.footer-divider{
+		border-top: 4px solid #4999f5;
+		width: 13%;
+		margin: 0 auto 30px;
+	}
+	.footer-social-links{
+		display: inline-flex;
+	}
+	.footer-lower-text{
+		font-size: 16px;
+	}
+
+	/* ===============================
+			Registration page 
+	================================== */
+	#reg-header{
+		width: 100%;
+		height: 60vh;
+	}
+	.reg-header-title{
+		width: 80%;
+		margin: 0 auto;
+		height: 50vh;
+		transform: translate(0%, 50%);
+		text-align: center;
+	}
+	.reg-header-title h1{
+		font-size: 3em;
+	}
+	.reg-header-title small{
+		font-size: 1.32em;
+	}
+	#reg-form-sec{
+		padding: 80px 0;
+		background: #f3f3f3;
+	}
+	.reg-form-container{
+		width: 90%;
+		margin: 0 auto;
+	}
+	.reg-form-content form label{
+		font-size: 19px;
+	}
+	.reg-form-content form .sub-label{
+		font-family: font_1;
+		font-size: 16px;
+		text-transform: none;
+	}
+	.reg-form-content form label span{
+		font-family: font_1;
+		font-size: 18px;
+		text-transform: none;
+	}
+	.require-mark-topic-div{
+		text-align: right;
+		color: #888;
+		font-family: font_7;
+		font-size: 14px;
+		display: flex;
+		float: right;
+	}
+	.require-mark, .require-mark-1, .require-mark-2{
+		position: absolute;
+		background: linear-gradient(45deg, transparent 50%, red 50%);
+		width: 16px;
+		height: 16px;
+		/*border-radius: 50%;*/
+		z-index: 1;
+		opacity: 0.9;
+	}
+	.require-mark-title{
+		background: red;
+		width: 14px;
+		height: 14px;
+		border-radius: 50%;
+		z-index: 1;
+		opacity: 0.9;
+		margin: 2px 5px 0 0;
+	}
+	.require-mark-title{
+		right: 35.5%;
+	}
+	.require-mark{
+		top: 0px;
+		right: 0px;
+	}
+	.require-mark-1{
+		top: 0px;
+		right: 0px;
+	}
+	.require-mark-2{
+		top: 33px;
+		right: 0px;
+	}
+	/* ====================================================
+	------------------- login page -------------------
+	===================================================== */
+	#login-header{
+		width: 100%;
+		height: 55vh;
+	}
+	.login-header-title{
+		width: 80%;
+		height: 50vh;
+		transform: translate(10%, 50%);
+	}
+	.login-header-title h1{
+		font-size: 3em;
+	}
+	.login-header-title small{
+		font-size: 1.32em;
+	}
+	#login-form-sec{
+		padding: 70px 0;
+		background: #f3f3f3;
+	}
+	.form-container{
+		width: 85%;
+		margin: 0 auto;
+	}
+	.form-content{
+		padding: 40px 20px;
+	}
+	/* ============================================ 
+					Admin page styles 
+	=============================================== */
+	.admin-top{
+		width: 90%;
+		margin: 20px auto;
+		display: flex;
+	}
+	.admin-top .admin-title-div{
+		width: 50%;
+	}
+	.admin-top .admin-title-div #admin-title{
+		font-size: 25px;
+	}
+	.admin-top .admin-logout-div{
+		width: 50%;
+		margin: auto 0;
+		text-align: right;
+	}
+	#admin-logout-btn{
+		font-size: 15px;
+		letter-spacing: 1px;
+	}
+	.filter-div{
+		width: 80%;
+		margin: 20px auto;
+	}
+	#filter-form1{
+		margin-bottom: 20px;
+	}
+	#filter-form1 select{
+		padding: 5px;
+		width: 90%;
+	}
+	#filter-form2 input[type=text]{
+		width: 100%;
+	}
+	#filter-form1 .admin_form_opt, #filter-form2 .admin_form_opt{
+		display: flex;
+	}
+	.col-md-7, .col-md-5, .col-md-4, .col-md-1{
+		padding-right: 0;
+	}
+	#filter-form1 label, #filter-form2 label{
+		font-weight: bold;
+	}
+	#filter-form1 #filter-btn1, #filter-form2 #filter-btn2{
+		margin-top: 10px;
+		padding: 5px 15px;
+		font-family: sans-serif;
+		color: #fff;
+		text-transform: uppercase;
+		font-weight: bold;
+		border: 0;
+		background: #00C851;
+	}
+	#admin-section{
+		padding: 0;
+	}
+	.admin-container{
+		width: 95%;
+		margin: 0 auto;
+	}
+	.admin-container table{
+		width: 100%;
+	}
+	table thead{
+		text-align: center;
+	}
+	table th, table tbody td{
+		font-size: 13px;
+		font-weight: normal;
+		font-family: font_7;
+	}
+	table tbody .button-td{
+		text-align: center;
+	}
+	#bank_rec_form button, #std_ship_form button{
+		font-size: 12px;
+		font-family: font_7;
+	}
+	.download-btns-div{
+		width: 95%;
+		margin: 25px auto;
+	}
+	.download-btns-div button{
+		padding: 5px 17px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1000px){
+	.col-md-7, .col-md-5, .col-md-4, .col-md-1 {
+	    padding-right: 15px;
+	}
+	/* ========================= Header ======================= */
+	.header-content{
+		width: 100%;
+		height: 60vh;
+	}
+	.header-title{
+		font-size: 5.2em;
+	}
+	.address-div .place{
+		font-size:2.5em;
+	}
+	.address-div .date{
+		margin-top: 25px;
+		font-size:1.7em;
+	}
+	/* ================ Countdown section ================== */
+	#countdown-sec{
+		display: flex;
+		padding: 40px;
+	}
+	.countdown-title{
+		width: 35%;
+		font-size: 1.5em;
+		font-family: font_9;
+		font-weight: normal; 
+	}
+	.countdown-title span{
+		font-family: font_7;
+		font-weight: normal;
+		font-size: 20px;
+	}
+	#countdown-sec .countdown-col{
+		width: 65%;
+		margin: 15px auto 0;
+	}
+	.days, .hours, .minutes, .seconds{
+		font-size: 3em;
+	}
+	.smalltext{
+		font-size: 1em;
+	}
+	/* ================ Registration section ================ */
+	#reg-section-content{
+		width: 95%;
+		margin: 0 auto;
+		padding: 80px 0 70px;
+	}
+	.reg-sec-title{
+		margin-bottom: 50px;
+	}
+	.card{
+		width: 100%;
+		margin: 0 auto;
+		border-radius: 20px;
+		border: 4px solid #fff;
+	}
+	.card-body{
+		padding: 0 15px 40px;
+	}
+	.card img{
+		margin: 25px auto 0;
+	}
+	.side-cards{
+		margin: 140px 0;
+	}
+	/* ==================== Call for papers ================== */
+	#call-for-paper-sec{
+		padding: 80px 0;
+		background: #f3f3f3;
+	}
+	.call-for-paper-title{
+		margin-bottom: 50px;
+	}
+	.call-for-paper-title h1{
+		font-family: font_6;
+		color: #000;
+	}
+	.call-for-paper-title p{
+		font-size: 19px;
+	}
+	.call-for-paper-subdivs{
+		width: 100%;
+		margin: 7px auto;
+		padding: 20px 0;
+	}
+	.section-btn-area a{
+		padding: 15px 30px;
+		margin: 10px 8px;
+	}
+	/* ========================= Gallery ======================= */
+	.main-box{
+		width: 50%;
+		height: auto;
+		display: inline-flex;
+	}
+	.img-box{
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+	}
+	.img-box img{
+		position: relative;
+		width: 100%;
+		transition: 0.4s;
+	}
+	.img-icon{
+		position: absolute;
+		background: rgba(107, 0, 255, 0.8);
+		width: 44.9%;
+		height: 111px;
+		padding: 129px 0;
+		opacity: 0;
+		transition: 0.4s;
+	}
+	.img-icon a{
+		padding: 13px;
+		color: #6b00ff;
+		background: #edce18;
+		border: 4px solid #c21e56;
+		border-radius: 50%;
+		transition: 0.4s;
+		transform: scale(0);
+	}
+	.main-box:hover .img-icon{
+		opacity: 1;
+	}
+	.main-box:hover .img-icon a{
+		transform: scale(1);
+	}
+	.main-box:hover .img-box img{
+		transform: scale(1.15);
+	}
+	/* ===================== Footer ====================== */
+	.footer-content{
+		padding: 70px 50px 0px;
+	}
+	.footer-logo-img img{
+		width: 75%;
+	}
+	.footer-sub-content h4{
+		font-family: font_11;
+	}
+	.footer-bottom-divider{
+		width: 90%;
+		margin: 0 auto 25px;
+		border-top: 1px solid #777;
+	}
+	.footer-lower-text{
+		padding-bottom: 25px;
+		font-family: font_1;
+		font-size: 15px;
+		text-transform: uppercase;
+	}
+	.footer-lower-text a{
+		color: #edce18;
+		transition: 0.05s;
+	}
+
+	/* ===============================
+			Registration page 
+	================================== */
+	#reg-header{
+		width: 100%;
+		height: 40vh;
+	}
+	.reg-header-title{
+		width: 80%;
+		margin: 0 auto;
+		height: 40vh;
+		transform: translate(0%, 50%);
+		text-align: center;
+	}
+	.reg-header-title h1{
+		font-size: 3em;
+	}
+	.reg-header-title small{
+		font-size: 1.32em;
+	}
+	#reg-form-sec{
+		padding: 80px 0;
+		background: #f3f3f3;
+	}
+	.reg-form-container{
+		width: 80%;
+		margin: 0 auto;
+	}
+	.reg-form-content form label{
+		font-size: 19px;
+	}
+	.reg-form-content form input[type=email]{
+		padding-right: 15px;
+	}
+	.reg-form-content form .sub-label{
+		font-family: font_1;
+		font-size: 16px;
+		text-transform: none;
+	}
+	.reg-form-content form label span{
+		font-family: font_1;
+		font-size: 18px;
+		text-transform: none;
+	}
+	.require-mark-topic-div{
+		text-align: right;
+		color: #888;
+		font-family: font_7;
+		font-size: 14px;
+		display: flex;
+		float: right;
+	}
+	.require-mark, .require-mark-1, .require-mark-2{
+		position: absolute;
+		background: linear-gradient(45deg, transparent 50%, red 50%);
+		width: 16px;
+		height: 16px;
+		/*border-radius: 50%;*/
+		z-index: 1;
+		opacity: 0.9;
+	}
+	.require-mark-title{
+		background: red;
+		width: 14px;
+		height: 14px;
+		border-radius: 50%;
+		z-index: 1;
+		opacity: 0.9;
+		margin: 2px 5px 0 0;
+	}
+	/* ====================================================
+	------------------- login page -------------------
+	===================================================== */
+	#login-header{
+		width: 100%;
+		height: 35vh;
+	}
+	.login-header-title{
+		width: 80%;
+		height: 30vh;
+		transform: translate(10%, 50%);
+	}
+	.login-header-title h1{
+		font-size: 3em;
+	}
+	.login-header-title small{
+		font-size: 1.32em;
+	}
+	#login-form-sec{
+		padding: 70px 0;
+		background: #f3f3f3;
+	}
+	.form-container{
+		width: 70%;
+		margin: 0 auto;
+	}
+	.form-content{
+		padding: 40px;
+	}
+}
+
+@media (min-width: 1200px) {
+
+}
