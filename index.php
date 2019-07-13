@@ -78,7 +78,7 @@
                 </div>
                 <br>
                 <div class="address-div">
-                    <div class="place">International Conference Sabaragamuwa University of Sri Lanka</div><br>
+                  <div class="place">International Conference Sabaragamuwa University of Sri Lanka</div><br>
                     <div class="date">14 and 15 November 2019</div>
                 </div>
             </div>
@@ -257,6 +257,19 @@
                             </div>
                             <div class="committee-people-div" data-aos="fade-up" data-aos-duration="2400">
                                 <h3>Advisor Board</h3>
+                               <ul>
+                                    <li><b>Genaral Chair - </b>Mr. Sample Person's Name</li>
+                                    <li><b>Genaral Chair - </b>Mr. Sample Person's Name</li>
+                                    <li><b>Genaral Chair - </b>Mr. Sample Person's Name</li>
+                                    <li><b>Genaral Chair - </b>Mr. Sample Person's Name</li>
+                                    <li><b>Genaral Chair - </b>Mr. Sample Person's Name</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-4">
+                            <div class="committee-people-div" data-aos="fade-up" data-aos-duration="2000">
+                                <h3>Conference Chairs</h3>
                                 <ul>
                                     <li><b>Genaral Chair - </b>Mr. Sample Person's Name</li>
                                     <li><b>Genaral Chair - </b>Mr. Sample Person's Name</li>
@@ -284,6 +297,13 @@
                                 <ul>
                                     <li><b>Genaral Chair - </b>Mr. Sample Person's Name</li>
                                     <li><b>Genaral Chair - </b>Mr. Sample Person's Name</li>
+                                </ul>
+                            </div>
+                            <div class="committee-people-div" data-aos="fade-up" data-aos-duration="2400">
+                                <h3>Advisor Board</h3>
+                                <ul>
+                                    <li><b>Genaral Chair - </b>Mr. Sample Person's Name</li>
+                                    <li><b>Genaral Chair - </b>Mr. Sample Person's Name</li>
                                     <li><b>Genaral Chair - </b>Mr. Sample Person's Name</li>
                                     <li><b>Genaral Chair - </b>Mr. Sample Person's Name</li>
                                     <li><b>Genaral Chair - </b>Mr. Sample Person's Name</li>
@@ -296,7 +316,7 @@
         </div>
     </div>
     <div id="countdown-sec">
-        <div class="person-title" id="person-title1" data-aos="fade-up" data-aos-duration="1300">
+      <div class="person-title" id="person-title1" data-aos="fade-up" data-aos-duration="1300">
             <div class="person-main-title">Dr. K.R. Koswattage</div>
             <div class="person-sub-title">Conference Chair</div>
             <span>koswattagekr@appsc.sab.ac.lk</span>

@@ -140,7 +140,7 @@
 	    				</div>
 	    			</div>
 	    			<div class="row">
-	    				<div class="col-md-6 col-sm-12">
+              <div class="col-md-6 col-sm-12">
 	    					<input type="email" name="email" id="email" placeholder="Email"><div class="require-mark"></div>
 	    				</div>
 	    				<div class="col-md-6 col-sm-12">

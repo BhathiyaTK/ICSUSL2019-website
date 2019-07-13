@@ -137,7 +137,7 @@
 		color: #fff;
 		padding: 15px 40px;
 		margin: 10px auto;
-		background: linear-gradient(45deg, #c21e56 50%, #910618 50%);
+    background: linear-gradient(45deg, #c21e56 50%, #910618 50%);
 		box-shadow: 1px 1px 5px 5px #ddd;
 		position: relative;
 		display: inline-block;
@@ -166,7 +166,7 @@
 		margin: 3px 0;
 		font-size: 16px;
 	}
-	.person-title{
+  .person-title{
 		width: 100%;
 		text-align: center;
 		padding-top: 10px;
@@ -549,8 +549,8 @@
 		padding: 15px 30px;
 		margin: 10px 8px;
 	}
-	/* ======================= committee ======================= */
-	.person-title{
+  /* ======================= committee ======================= */
+  .person-title{
 		width: 100%;
 		text-align: center;
 		padding-top: 10px;

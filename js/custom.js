@@ -31,7 +31,7 @@ $(document).ready(function(){
 		e.preventDefault();
 		if (width >= 1000) {
 			$('html, body').animate({
-				scrollTop: $("#call-for-paper-sec").offset().top="1695px"
+        scrollTop: $("#call-for-paper-sec").offset().top="1695px"
 			},1000);
 		}
 	});
@@ -39,7 +39,7 @@ $(document).ready(function(){
 		e.preventDefault();
 		if (width >= 1000) {
 			$('html, body').animate({
-				scrollTop: $("#call-for-paper-sec").offset().top="2226px"
+        scrollTop: $("#call-for-paper-sec").offset().top="2226px"
 			},1000);
 		}
 	});
@@ -47,7 +47,7 @@ $(document).ready(function(){
 		e.preventDefault();
 		if (width >= 1000) {
 			$('html, body').animate({
-				scrollTop: $("#call-for-paper-sec").offset().top="3166px"
+        scrollTop: $("#call-for-paper-sec").offset().top="3166px"
 			},1000);
 		}
 	});

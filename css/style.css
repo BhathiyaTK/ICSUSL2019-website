@@ -173,7 +173,7 @@ header{
 .countdown-title{
 	width: 50%;
 	color: #eee;
-	font-size: 2em;
+	font-size: 1.5em;
 	font-family: font_9;
 	font-weight: bolder;
 	padding-top: 10px;
@@ -363,7 +363,7 @@ header{
 	color: #fff;
 	padding: 15px 40px;
 	margin: 0 5px;
-	background: linear-gradient(45deg, #c21e56 50%, #910618 50%);
+  background: linear-gradient(45deg, #c21e56 50%, #910618 50%);
 	box-shadow: 1px 1px 5px 5px #ddd;
 	position: relative;
 }
@@ -374,7 +374,7 @@ header{
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background: linear-gradient(45deg, #c21e56 50%, #910618 50%);
+  background: linear-gradient(45deg, #c21e56 50%, #910618 50%);
 	z-index: -1;
 }
 .section-btn-area a, .section-btn-area a:after{
@@ -565,7 +565,7 @@ header{
 	text-transform: uppercase;
 	font-family: font_10;
 	padding: 15px 40px;
-	background: linear-gradient(45deg, #c21e56 50%, #910618 50%);
+  background: linear-gradient(45deg, #c21e56 50%, #910618 50%);
 	box-shadow: 1px 1px 7px 7px #eee;
 	position: relative;
 }
@@ -576,7 +576,7 @@ header{
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background: linear-gradient(45deg, #c21e56 50%, #910618 50%);
+  background: linear-gradient(45deg, #c21e56 50%, #910618 50%);
 	z-index: -1;
 }
 .form-content form input[type=submit], .form-content form input[type=submit]:after{
@@ -693,7 +693,7 @@ header{
 	text-transform: uppercase;
 	font-family: font_10;
 	padding: 15px 40px;
-	background: linear-gradient(45deg, #c21e56 50%, #910618 50%);
+  background: linear-gradient(45deg, #c21e56 50%, #910618 50%);
 	box-shadow: 1px 1px 7px 7px #eee;
 	position: relative;
 }
@@ -704,7 +704,7 @@ header{
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background: linear-gradient(45deg, #c21e56 50%, #910618 50%);
+  background: linear-gradient(45deg, #c21e56 50%, #910618 50%);
 	z-index: -1;
 }
 .reg-form-content form input[type=submit], .reg-form-content form input[type=submit]:after{
