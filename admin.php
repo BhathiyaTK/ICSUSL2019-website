@@ -13,16 +13,16 @@ if (isset($_SESSION['email'])) {
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
+	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="keywords" content="HTML5, CSS3, Bootstrap, JQuery, PHP, MySQL">
     <meta name="author" content="Bhathiya Kariyawasam, Osusara Kammalawatta">
 
-    <title>ICSUSL 2019 | Admin Panel</title>
+	<title>ICSUSL 2019 | Admin Panel</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
     <!-- Fontawesome -->
@@ -163,7 +163,7 @@ if (isset($_SESSION['email'])) {
     </script>
 </head>
 <body>
-    <!-- Preloader -->
+	<!-- Preloader -->
     <script type="text/javascript">
         $(window).on("load", function() {
             $(".se-pre-con").fadeOut("slow");
@@ -220,9 +220,9 @@ if (isset($_SESSION['email'])) {
     </div>
 
     <div id="admin-section">
-        <div class="admin-container table-responsive">
-            <?php
-            $sql_user = "SELECT * FROM deligates";
+    	<div class="admin-container table-responsive">
+    		<?php
+    		$sql_user = "SELECT * FROM deligates";
             $rt = $conn->query($sql_user);
             if ($rt->num_rows>0) {
                 $sql_user_rslt = mysqli_query($conn,$sql_user);
@@ -300,9 +300,9 @@ if (isset($_SESSION['email'])) {
             }else{
                 echo '<i class="fas fa-exclamation-circle"></i> &nbsp<b>No deligates found.</b>';
             }
-            ?>  
-                </tbody>
-            </table>
+    		?>	
+	    		</tbody>
+	    	</table>
 
             <!-- Modals -->
             <div class="modal fade" id="bank_rec_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -321,7 +321,7 @@ if (isset($_SESSION['email'])) {
               </div>
             </div>
 
-        </div>
+    	</div>
         <div class="download-btns-div">
             <button class="btn btn-secondary btn-sm" id="download-pdf-btn"><i class="fas fa-download"></i>&nbsp<b>PDF</b></button>&nbsp&nbsp
             <button class="btn btn-secondary btn-sm" id="download-excel-btn" data-export="export"><i class="fas fa-download"></i>&nbsp<b>CSV</b></button>

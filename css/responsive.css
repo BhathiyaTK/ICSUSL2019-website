@@ -26,14 +26,14 @@
     	top: 0;
     	right: 25px;
     	margin-top: 20px;
-    	background: #6b00ff;
+    	background: #910618;
 	}
 	.navbar-toggler .navbar-toggler-icon{
     	color: #fff;
     	margin-top: 5px;
     }
     .navbar-collapse{
-    	background: #6b00ff;
+    	background: #910618;
     	padding: 5px 20px;
     	box-shadow: 1px 1px 8px 8px rgba(79, 79, 79, 0.3);
     }
@@ -47,7 +47,7 @@
 	/* ========================= Header ======================= */
 	.header-content{
 		width: 100%;
-		height: 45vh;
+		height: 60vh;
 	}
 	.header-title{
 		font-size: 4em;
@@ -137,7 +137,7 @@
 		color: #fff;
 		padding: 15px 40px;
 		margin: 10px auto;
-		background: linear-gradient(45deg, #6b00ff 50%, #c21e56 50%);
+		background: linear-gradient(45deg, #c21e56 50%, #910618 50%);
 		box-shadow: 1px 1px 5px 5px #ddd;
 		position: relative;
 		display: inline-block;
@@ -165,6 +165,22 @@
 		font-family: font_7;
 		margin: 3px 0;
 		font-size: 16px;
+	}
+	.person-title{
+		width: 100%;
+		text-align: center;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	#person-title1{
+		border-right: 0;
+		padding-bottom: 25px;
+		border-bottom: 1px solid #555;
+	}
+	#person-title2{
+		border-left: 0;
+		padding-top: 25px;
+		border-top: 1px solid #555;
 	}
 	/* ========================= Gallery ======================= */
 	.main-box{
@@ -211,7 +227,7 @@
 	}
 	/* ===================== Footer ====================== */
 	#footer-sec{
-		background: rgb(107, 0, 255);
+		background: rgb(28,28,28);
 		background-image: url(../images/pattern.png);
 		background-size: cover;
 		background-position: 40%, right;
@@ -233,7 +249,7 @@
 		margin: 0 auto 30px;
 	}
 	.footer-social-links{
-		display: inline-flex;
+		margin-bottom: 25px;
 	}
 	.footer-lower-text{
 		font-size: 16px;
@@ -532,6 +548,23 @@
 	.section-btn-area a{
 		padding: 15px 30px;
 		margin: 10px 8px;
+	}
+	/* ======================= committee ======================= */
+	.person-title{
+		width: 100%;
+		text-align: center;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	#person-title1{
+		border-right: 0;
+		padding-bottom: 25px;
+		border-bottom: 1px solid #555;
+	}
+	#person-title2{
+		border-left: 0;
+		padding-top: 25px;
+		border-top: 1px solid #555;
 	}
 	/* ========================= Gallery ======================= */
 	.main-box{
